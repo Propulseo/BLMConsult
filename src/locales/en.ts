@@ -321,8 +321,8 @@ export const en: TranslationKeys = {
         description: 'A jargon-free approach, centered on your real needs'
       },
       outils: {
-        title: 'Moving in the right direction',
-        description: 'With concrete tools adapted to your context'
+        title: 'Tailored solutions',
+        description: 'With concrete tools specifically adapted to your context'
       },
       professionnels: {
         title: 'Surrounding yourself with professionals',

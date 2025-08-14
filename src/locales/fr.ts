@@ -312,8 +312,8 @@ export const fr: TranslationKeys = {
         description: 'Une approche sans jargon, centrée sur vos besoins réels'
       },
       outils: {
-        title: 'Avancer dans le bon sens',
-        description: 'Avec des outils concrets et adaptés à votre contexte'
+        title: 'Solutions sur-mesure',
+        description: 'Avec des outils concrets et adaptés spécifiquement à votre contexte'
       },
       professionnels: {
         title: 'S\'entourer de professionnels',
