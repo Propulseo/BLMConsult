@@ -1,10 +1,10 @@
 import React, { useMemo } from 'react';
 import { GraduationCap, Target, Users, Shield, CheckCircle, Star, Clock, Mail, BookOpen, Award, Zap, Heart, MessageCircle } from 'lucide-react';
-import { useLanguageContext } from '../contexts/LanguageContext';
+import { useTranslation } from '../hooks/useTranslation';
 import SEOHead from '../components/SEOHead';
 
 const Formations: React.FC = () => {
-  const { t } = useLanguageContext();
+  const { t } = useTranslation();
 
   // SEO optimized structured data for Formations page
   const structuredData = {

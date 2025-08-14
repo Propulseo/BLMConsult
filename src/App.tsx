@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { LanguageProvider } from './contexts/LanguageContext';
 import Header from './components/Layout/Header';
 import Footer from './components/Layout/Footer';
 import Home from './pages/Home';
@@ -61,21 +60,19 @@ function App() {
   };
 
   return (
-    <LanguageProvider>
-      <div className="min-h-screen bg-white">
-        <ScrollProgressBar />
-        <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
-        <main className="pt-20">
-          {renderPage()}
-        </main>
-        <Footer setCurrentPage={setCurrentPage} />
-        <CookieConsent 
-          onAccept={() => console.log('Cookies accepted')}
-          onReject={() => console.log('Cookies rejected')}
-          onCustomize={() => console.log('Cookies customized')}
-        />
-      </div>
-    </LanguageProvider>
+    <div className="min-h-screen bg-white">
+      <ScrollProgressBar />
+      <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
+      <main className="pt-20">
+        {renderPage()}
+      </main>
+      <Footer setCurrentPage={setCurrentPage} />
+      <CookieConsent 
+        onAccept={() => console.log('Cookies accepted')}
+        onReject={() => console.log('Cookies rejected')}
+        onCustomize={() => console.log('Cookies customized')}
+      />
+    </div>
   );
 }
 

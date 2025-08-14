@@ -1,10 +1,10 @@
 import React from 'react';
 import { Users, Target, Zap, Heart, CheckCircle, Star, Clock, Award, TrendingUp, RefreshCw, MessageCircle, ArrowRight, User, Building, Lightbulb, Shield } from 'lucide-react';
-import { useLanguageContext } from '../contexts/LanguageContext';
+import { useTranslation } from '../hooks/useTranslation';
 import SEOHead from '../components/SEOHead';
 
 const Coaching: React.FC = () => {
-  const { t } = useLanguageContext();
+  const { t } = useTranslation();
 
   // SEO optimized structured data for Coaching page
   const structuredData = {

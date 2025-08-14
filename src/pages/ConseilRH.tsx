@@ -1,10 +1,10 @@
 import React from 'react';
 import { Target, Shield, Zap, Heart, CheckCircle, Star, Clock, Award, TrendingUp, Users, RefreshCw, MessageCircle, ArrowRight } from 'lucide-react';
-import { useLanguageContext } from '../contexts/LanguageContext';
+import { useTranslation } from '../hooks/useTranslation';
 import SEOHead from '../components/SEOHead';
 
 const ConseilRH: React.FC = () => {
-  const { t } = useLanguageContext();
+  const { t } = useTranslation();
 
   // SEO optimized structured data for Conseil RH page
   const structuredData = {

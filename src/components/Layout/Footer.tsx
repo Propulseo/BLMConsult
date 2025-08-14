@@ -1,12 +1,12 @@
 import React from 'react';
-import { useLanguageContext } from '../../contexts/LanguageContext';
+import { useTranslation } from '../../hooks/useTranslation';
 
 interface FooterProps {
   setCurrentPage?: (page: string) => void;
 }
 
 const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
-  const { t } = useLanguageContext();
+  const { t } = useTranslation();
 
   const currentYear = new Date().getFullYear();
 

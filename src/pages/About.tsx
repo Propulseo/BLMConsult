@@ -1,10 +1,10 @@
 import React from 'react';
 import { GraduationCap, Briefcase, Users, Award, Target, Heart, Shield, Zap, CheckCircle, Star, Clock, Lock, FileText, UserCheck, Eye, MessageCircle } from 'lucide-react';
-import { useLanguageContext } from '../contexts/LanguageContext';
+import { useTranslation } from '../hooks/useTranslation';
 import SEOHead from '../components/SEOHead';
 
 const About: React.FC = () => {
-  const { t } = useLanguageContext();
+  const { t } = useTranslation();
 
   // SEO optimized structured data for About page
   const structuredData = {

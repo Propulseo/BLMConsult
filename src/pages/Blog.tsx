@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
-import { useLanguageContext } from '../contexts/LanguageContext';
+import { useTranslation } from '../hooks/useTranslation';
 import SEOHead from '../components/SEOHead';
 
 interface BlogProps {
@@ -8,7 +8,7 @@ interface BlogProps {
 }
 
 const Blog: React.FC<BlogProps> = ({ setCurrentPage }) => {
-  const { t } = useLanguageContext();
+  const { t } = useTranslation();
 
   // SEO optimized structured data for Blog page
   const structuredData = {

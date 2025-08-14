@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { ChevronDown, Globe } from 'lucide-react';
-import { useLanguageContext } from '../contexts/LanguageContext';
+import { useTranslation } from '../hooks/useTranslation';
 import { SUPPORTED_LANGUAGES } from '../config/languages';
 
 interface LanguageSelectorProps {
@@ -14,7 +14,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
   showLabel = true,
   variant = 'default'
 }) => {
-  const { currentLanguage, changeLanguage, t } = useLanguageContext();
+  const { currentLanguage, changeLanguage, t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 

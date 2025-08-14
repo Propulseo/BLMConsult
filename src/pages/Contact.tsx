@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Mail, Phone, MapPin, Send, Clock, MessageCircle } from 'lucide-react';
-import { useLanguageContext } from '../contexts/LanguageContext';
+import { useTranslation } from '../hooks/useTranslation';
 import SEOHead from '../components/SEOHead';
 
 interface ContactProps {
@@ -8,7 +8,7 @@ interface ContactProps {
 }
 
 const Contact: React.FC<ContactProps> = ({ setCurrentPage }) => {
-  const { t } = useLanguageContext();
+  const { t } = useTranslation();
 
   // SEO optimized structured data for Contact page
   const structuredData = {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, CheckCircle, Star, Target, Users, GraduationCap, Handshake, MessageCircle, Shield, Zap, Heart, Clock, Award } from 'lucide-react';
-import { useLanguageContext } from '../contexts/LanguageContext';
+import { useTranslation } from '../hooks/useTranslation';
 import SEOHead from '../components/SEOHead';
 
 interface ServicesProps {
@@ -8,7 +8,7 @@ interface ServicesProps {
 }
 
 const Services: React.FC<ServicesProps> = ({ setCurrentPage }) => {
-  const { t } = useLanguageContext();
+  const { t } = useTranslation();
 
   // SEO optimized structured data for Services page
   const structuredData = {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import { useLanguageContext } from '../../contexts/LanguageContext';
+import { useTranslation } from '../../hooks/useTranslation';
 import LanguageSelector from '../LanguageSelector';
 
 interface HeaderProps {
@@ -9,7 +9,7 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
-  const { t } = useLanguageContext();
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [servicesDropdown, setServicesDropdown] = useState(false);

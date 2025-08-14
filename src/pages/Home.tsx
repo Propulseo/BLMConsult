@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, CheckCircle, Award, Heart, Star, Play, Shield, Zap, Target, Users, Clock, MessageCircle, Phone, Mail, Quote, TrendingUp, BookOpen, Calendar } from 'lucide-react';
-import { useLanguageContext } from '../contexts/LanguageContext';
+import { useTranslation } from '../hooks/useTranslation';
 import SEOHead from '../components/SEOHead';
 import AnimatedSection from '../components/AnimatedSection';
 import AnimatedButton from '../components/AnimatedButton';
@@ -11,7 +11,7 @@ interface HomeProps {
 }
 
 const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
-  const { t, formatNumber } = useLanguageContext();
+  const { t, formatNumber } = useTranslation();
 
   // Vérification de sécurité robuste
   if (!t || !t.home) {
