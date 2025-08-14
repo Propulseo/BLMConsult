@@ -218,7 +218,7 @@ export const en: TranslationKeys = {
       title: 'Active member of:',
       subtitle: 'Commitment to reference professional networks',
       active: 'Active',
-      supervision: 'Regular supervision in my practice',
+      supervision: 'Regular supervision in our practice',
       recognition: 'Recognition'
     },
     interventions: {

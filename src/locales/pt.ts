@@ -209,7 +209,7 @@ export const pt: TranslationKeys = {
       title: 'Membro ativa de:',
       subtitle: 'Compromisso com redes profissionais de referência',
       active: 'Ativo',
-      supervision: 'Supervisão regular no exercício da minha prática',
+      supervision: 'Supervisão regular no exercício da nossa prática',
       recognition: 'Reconhecimento'
     },
     interventions: {
