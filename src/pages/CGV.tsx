@@ -207,5 +207,3 @@ const CGV: React.FC = () => {
 };
 
 export default CGV;
-  )
-}
