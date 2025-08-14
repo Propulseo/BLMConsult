@@ -146,21 +146,21 @@ export const pt: TranslationKeys = {
         title: 'A importância do diálogo social na empresa',
         excerpt: 'Como o ajudamos a criar um ambiente propício a trocas construtivas...',
         category: 'Diálogo Social',
-        date: '1 Junho 2025',
+        date: '15 Março 2024',
         readTime: '5 min'
       },
       post2: {
         title: 'Prevenir os riscos psicossociais',
         excerpt: 'As nossas chaves para uma prevenção eficaz dos RPS no trabalho...',
         category: 'Prevenção',
-        date: '8 Junho 2025',
+        date: '28 Fevereiro 2024',
         readTime: '7 min'
       },
       post3: {
         title: 'O papel do gestor na QVCT',
         excerpt: 'Como acompanhamos os gestores para melhorar a QVCT...',
         category: 'Gestão',
-        date: '15 Junho 2025',
+        date: '12 Fevereiro 2024',
         readTime: '6 min'
       }
     }
@@ -647,6 +647,16 @@ export const pt: TranslationKeys = {
       downloadCertificate: 'Certificado descarregável aqui'
     },
     madeWithPassion: 'Feito com paixão por'
+  },
+  
+  contactCTA: {
+    title: 'Pronto para transformar a sua organização?',
+    subtitle: 'Contacte-nos hoje para um diagnóstico gratuito e descubra como a nossa especialização o pode acompanhar para a excelência organizacional.',
+    callButton: 'Ligar agora',
+    messageButton: 'Enviar mensagem',
+    response48h: 'Resposta em 48h',
+    freeDiagnostic: 'Diagnóstico gratuito',
+    personalizedQuote: 'Orçamento personalizado'
   },
   
   contactCTA: {

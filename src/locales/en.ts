@@ -146,33 +146,24 @@ export const en: TranslationKeys = {
         title: 'The importance of social dialogue in business',
         excerpt: 'How we help you create an environment conducive to constructive exchanges...',
         category: 'Social Dialogue',
-        date: 'June 1, 2025',
+        date: 'March 15, 2024',
         readTime: '5 min'
       },
       post2: {
         title: 'Preventing psychosocial risks',
         excerpt: 'Our keys to effective RPS prevention at work...',
         category: 'Prevention',
-        date: 'June 8, 2025',
+        date: 'February 28, 2024',
         readTime: '7 min'
       },
       post3: {
         title: 'The manager\'s role in QVCT',
         excerpt: 'How we help you support managers to improve QVCT...',
         category: 'Management',
-        date: 'June 15, 2025',
+        date: 'February 12, 2024',
         readTime: '6 min'
       }
     },
-    contactCTA: {
-      title: 'Ready to transform your organization?',
-      subtitle: 'Contact us today for a free diagnosis and discover how our expertise can accompany you towards organizational excellence.',
-      callButton: 'Call now',
-      messageButton: 'Send message',
-      response48h: 'Response within 48h',
-      freeDiagnostic: 'Free diagnostic',
-      personalizedQuote: 'Personalized quote'
-    }
   },
   
   about: {
@@ -656,6 +647,16 @@ export const en: TranslationKeys = {
       downloadCertificate: 'Download certificate here'
     },
     madeWithPassion: 'Made with passion by'
+  },
+  
+  contactCTA: {
+    title: 'Ready to transform your organization?',
+    subtitle: 'Contact us today for a free diagnosis and discover how our expertise can accompany you towards organizational excellence.',
+    callButton: 'Call now',
+    messageButton: 'Send message',
+    response48h: 'Response within 48h',
+    freeDiagnostic: 'Free diagnostic',
+    personalizedQuote: 'Personalized quote'
   },
   
   meta: {
