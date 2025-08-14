@@ -94,7 +94,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
               <img 
                 src="https://lh3.googleusercontent.com/pw/AP1GczMcU-fT-3oC5vkVGYbOMwJfuPiS-k35vykCZZ3q_oJP4JEyX52vdiUh_rtiSt8yCyHEvZc-Df8nL_5jY85OBa2MMk4c57szEiB74iOK8YVhUmGS3SIDVpZTT5lJymOL3Ik34eq-KyG5z65UgXjB8v7-=w1024-h1024-s-no-gm?authuser=0"
                 alt="BLM Consult Logo"
-                className="h-12 w-12 sm:h-16 sm:w-16 lg:h-20 lg:w-20 object-contain group-hover:scale-105 transition-transform duration-300 rounded-lg"
+                className="h-12 w-12 object-contain group-hover:scale-105 transition-transform duration-300 rounded-lg"
               />
             </div>
           </div>
