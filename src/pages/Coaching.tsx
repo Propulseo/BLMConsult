@@ -177,8 +177,9 @@ const Coaching: React.FC = () => {
           </div>
           
           <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {coachingTypes.map((coaching, index) => (
-              <div key={coaching.id} className="bg-gray-50 rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 group max-w-3xl mx-auto">
+              <div key={coaching.id} className="bg-gray-50 rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 group">
                 <div className="relative h-64 overflow-hidden">
                   <img 
                     src={coaching.image} 
@@ -256,6 +257,7 @@ const Coaching: React.FC = () => {
                 </div>
               </div>
             ))}
+          </div>
           </div>
         </div>
       </section>

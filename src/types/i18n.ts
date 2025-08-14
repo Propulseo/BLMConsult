@@ -708,6 +708,16 @@ export interface TranslationKeys {
         price: string;
         badge: string;
       };
+      collectif: {
+        title: string;
+        subtitle: string;
+        description: string;
+        features: string[];
+        benefits: string[];
+        duration: string;
+        price: string;
+        badge: string;
+      };
     };
     contexte: {
       title: string;
