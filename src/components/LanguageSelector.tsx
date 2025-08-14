@@ -64,7 +64,6 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
                 <span className="text-xs text-gray-500 font-semibold">{language.flag}</span>
               </button>
             ))}
-                  <span className="text-xs text-gray-500 hidden sm:inline">{language.flag}</span>
           </div>
         )}
       </div>
@@ -120,7 +119,6 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
               <div>
                 <span className="font-medium">{language.flag}</span>
                 <span className="font-medium">{language.nativeName}</span>
-                <span className="text-xs text-gray-500">{language.flag}</span>
               </div>
               {currentLanguage === language.code && (
                 <div className="ml-auto w-2 h-2 bg-blue-600 rounded-full"></div>
