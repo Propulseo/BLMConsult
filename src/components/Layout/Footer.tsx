@@ -105,7 +105,7 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-ocean-600/30 mt-16 pt-6">
+        <div className="border-t border-ocean-600/30 mt-12 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-ocean-300 font-medium">
               © {currentYear} BLM Consult. {t.footer.copyright}
