@@ -210,7 +210,7 @@ const About: React.FC = () => {
                       <p className="font-bold text-gray-900">{t.about.hero.profile.name}</p>
                       <p className="text-sm text-gray-600">{t.about.hero.profile.role}</p>
                       <a 
-                        href="https://www.linkedin.com/in/lylia-mokrani" 
+                        href="https://www.linkedin.com/in/lylia-mokrani-06385439/"
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="inline-flex items-center text-blue-600 hover:text-blue-700 text-sm font-medium mt-2 transition-colors duration-300"

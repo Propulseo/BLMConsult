@@ -297,7 +297,7 @@ const Contact: React.FC<ContactProps> = ({ setCurrentPage }) => {
                 <div className="text-center">
                   <h4 className="text-lg font-semibold text-gray-900 mb-4">Suivez-moi sur LinkedIn</h4>
                   <a 
-                    href="https://www.linkedin.com/in/lylia-mokrani" 
+                    href="https://www.linkedin.com/in/lylia-mokrani-06385439/"
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-700 transition-colors duration-300 shadow-lg"

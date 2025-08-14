@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown, Linkedin } from 'lucide-react';
 import { useTranslation } from '../../hooks/useTranslation';
 import LanguageSelector from '../LanguageSelector';
 
@@ -170,11 +170,29 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
 
           {/* Language Selector - Far Right */}
           <div className="hidden lg:flex items-center ml-4">
+            <a 
+              href="https://www.linkedin.com/in/lylia-mokrani-06385439/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-ocean-100 transition-colors duration-300 mr-4 p-2 rounded-lg hover:bg-ocean-600/70"
+              aria-label="LinkedIn Lylia Mokrani"
+            >
+              <Linkedin className="w-5 h-5" />
+            </a>
             <LanguageSelector variant="compact" showLabel={false} />
           </div>
 
           {/* Menu mobile */}
           <div className="lg:hidden flex items-center space-x-3">
+            <a 
+              href="https://www.linkedin.com/in/lylia-mokrani-06385439/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-ocean-100 transition-colors duration-300 p-2 rounded-lg hover:bg-ocean-600/70"
+              aria-label="LinkedIn Lylia Mokrani"
+            >
+              <Linkedin className="w-5 h-5" />
+            </a>
             <LanguageSelector variant="compact" showLabel={false} />
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
