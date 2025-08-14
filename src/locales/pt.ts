@@ -42,7 +42,7 @@ export const pt: TranslationKeys = {
   home: {
     hero: {
       title: 'Transforme a sua empresa com soluções especializadas',
-      subtitle: 'Ofereço serviços de consultoria abrangentes para ajudar a sua organização a alcançar a excelência e um crescimento sustentável.',
+      subtitle: 'Oferecemos serviços de consultoria abrangentes para ajudar a sua organização a alcançar a excelência e um crescimento sustentável.',
       cta: 'Pronto para começar?',
       secondaryCta: 'Descobrir a nossa abordagem',
       expertise: 'Consultores especializados • + 15 anos de experiência',
@@ -53,7 +53,7 @@ export const pt: TranslationKeys = {
     },
     features: {
       title: 'Por que escolher BLM Consult',
-      subtitle: 'Obtenho resultados através de metodologias comprovadas e abordagens personalizadas',
+      subtitle: 'Obtemos resultados através de metodologias comprovadas e abordagens personalizadas',
       feature1: {
         title: 'Consultoria especializada',
         description: 'Conselhos profissionais de especialistas da indústria com anos de experiência'
@@ -94,8 +94,8 @@ export const pt: TranslationKeys = {
       }
     },
     servicesSection: {
-      title: 'Os meus domínios de especialização',
-      subtitle: 'Ofereço soluções profissionais para empresas, comunidades e instituições',
+      title: 'Os nossos domínios de especialização',
+      subtitle: 'Oferecemos soluções profissionais para empresas, comunidades e instituições',
       onQuote: 'Sob orçamento',
       learnMore: 'Saber mais'
     },
@@ -121,44 +121,44 @@ export const pt: TranslationKeys = {
       }
     },
     process: {
-      title: 'A minha abordagem de excelência',
-      subtitle: 'A minha abordagem estruturada e comprovada para resultados duradouros',
+      title: 'A nossa abordagem de excelência',
+      subtitle: 'A nossa abordagem estruturada e comprovada para resultados duradouros',
       step1: {
         title: 'Diagnóstico inicial',
-        description: 'Analiso em profundidade o seu contexto e desafios'
+        description: 'Analisamos em profundidade o seu contexto e desafios'
       },
       step2: {
         title: 'Estratégia personalizada',
-        description: 'Concebo um plano de ação personalizado adaptado às suas necessidades'
+        description: 'Concebemos um plano de ação personalizado adaptado às suas necessidades'
       },
       step3: {
         title: 'Implementação',
-        description: 'Acompanho-o com seguimento regular'
+        description: 'Acompanhamo-lo com seguimento regular'
       },
       step4: {
         title: 'Avaliação',
-        description: 'Meço os resultados e faço os ajustes necessários'
+        description: 'Medimos os resultados e fazemos os ajustes necessários'
       },
-      learnMoreButton: 'Saber mais sobre o meu método'
+      learnMoreButton: 'Saber mais sobre o nosso método'
     },
     blog: {
       post1: {
         title: 'A importância do diálogo social na empresa',
-        excerpt: 'Como o ajudo a criar um ambiente propício a trocas construtivas...',
+        excerpt: 'Como o ajudamos a criar um ambiente propício a trocas construtivas...',
         category: 'Diálogo Social',
         date: '1 Junho 2025',
         readTime: '5 min'
       },
       post2: {
         title: 'Prevenir os riscos psicossociais',
-        excerpt: 'As minhas chaves para uma prevenção eficaz dos RPS no trabalho...',
+        excerpt: 'As nossas chaves para uma prevenção eficaz dos RPS no trabalho...',
         category: 'Prevenção',
         date: '8 Junho 2025',
         readTime: '7 min'
       },
       post3: {
         title: 'O papel do gestor na QVCT',
-        excerpt: 'Como acompanhar os gestores para melhorar a QVCT...',
+        excerpt: 'Como acompanhamos os gestores para melhorar a QVCT...',
         category: 'Gestão',
         date: '15 Junho 2025',
         readTime: '6 min'
@@ -167,9 +167,9 @@ export const pt: TranslationKeys = {
   },
   
   about: {
-    title: 'Sobre a minha especialização',
+    title: 'Sobre a nossa especialização',
     subtitle: 'Especialista em transformação organizacional',
-    content: 'Sou uma consultora especialista dedicada a ajudar as organizações a atingir o seu pleno potencial através de soluções inovadoras e apoio estratégico personalizado.',
+    content: 'BLM Consult é um gabinete especialista dedicado a ajudar as organizações a atingir o seu pleno potencial através de soluções inovadoras e apoio estratégico personalizado.',
     hero: {
       badge: 'Lylia Mokrani • Fundadora BLM Consult',
       title: 'Sobre',
@@ -331,19 +331,19 @@ export const pt: TranslationKeys = {
   },
   
   services: {
-    title: 'Os meus serviços',
-    subtitle: 'As minhas soluções completas para as suas necessidades empresariais',
+    title: 'Os nossos serviços',
+    subtitle: 'As nossas soluções completas para as suas necessidades empresariais',
     hero: {
       badge: 'Acompanhamento profissional • Soluções à medida',
-      title: 'Os meus',
+      title: 'Os nossos',
       subtitle: 'serviços',
-      description: 'Ofereço-lhe um acompanhamento de excelência para transformar de forma sustentável as suas condições de trabalho e revelar o potencial da sua organização',
-      discoverButton: 'Descobrir os meus serviços',
+      description: 'Oferecemos-lhe um acompanhamento de excelência para transformar de forma sustentável as suas condições de trabalho e revelar o potencial da sua organização',
+      discoverButton: 'Descobrir os nossos serviços',
       quoteButton: 'Solicitar orçamento'
     },
     expertise: {
       title: 'Domínios de especialização',
-      subtitle: 'Ofereço-lhe quatro serviços complementares para uma transformação completa da sua organização'
+      subtitle: 'Oferecemos-lhe quatro serviços complementares para uma transformação completa da sua organização'
     },
     mainServices: {
       conseil: {
@@ -505,7 +505,7 @@ export const pt: TranslationKeys = {
       title: 'Pronto para impulsionar uma mudança estruturante na sua organização?',
       subtitle: 'Contacte-nos hoje para um diagnóstico gratuito e descubra como a nossa especialização o pode acompanhar para a excelência organizacional.',
       diagnosticButton: 'Diagnóstico gratuito',
-      brochureButton: 'Descarregar a minha brochura',
+      brochureButton: 'Descarregar a nossa brochura',
       response48h: 'Resposta em 48h',
       personalizedQuote: 'Orçamento personalizado',
       expertSupport: 'Acompanhamento especialista'
@@ -516,7 +516,7 @@ export const pt: TranslationKeys = {
     },
     service1: {
       title: 'Consultoria estratégica',
-      description: 'Os meus conselhos de especialista para transformação organizacional e planeamento estratégico',
+      description: 'Os nossos conselhos de especialista para transformação organizacional e planeamento estratégico',
       features: [
         'Desenvolvimento de estratégia empresarial',
         'Avaliação organizacional',
@@ -526,7 +526,7 @@ export const pt: TranslationKeys = {
     },
     service2: {
       title: 'Coaching profissional',
-      description: 'O meu coaching individual e de equipa para desenvolvimento da liderança',
+      description: 'O nosso coaching individual e de equipa para desenvolvimento da liderança',
       features: [
         'Coaching executivo',
         'Desenvolvimento de equipa',
@@ -536,7 +536,7 @@ export const pt: TranslationKeys = {
     },
     service3: {
       title: 'Programas de formação',
-      description: 'As minhas soluções de formação personalizadas para desenvolvimento de competências',
+      description: 'As nossas soluções de formação personalizadas para desenvolvimento de competências',
       features: [
         'Currículo personalizado',
         'Workshops interativos',
@@ -547,8 +547,8 @@ export const pt: TranslationKeys = {
   },
   
   contact: {
-    title: 'Contacte-me',
-    subtitle: 'Vamos falar dos seus projetos e necessidades de acompanhamento. Cada troca comigo começa por uma escuta atenta dos seus desafios.',
+    title: 'Contacte-nos',
+    subtitle: 'Vamos falar dos seus projetos e necessidades de acompanhamento. Cada troca connosco começa por uma escuta atenta dos seus desafios.',
     responseTime: 'Resposta garantida em 48h',
     whyBLM: {
       title: 'Porquê BLM Consult',
@@ -631,7 +631,7 @@ export const pt: TranslationKeys = {
   
   footer: {
     company: 'BLM Consult',
-    description: 'Transformo empresas através da minha especialização e soluções inovadoras.',
+    description: 'Transformamos empresas através da nossa especialização e soluções inovadoras.',
     quickLinks: 'Links rápidos',
     contact: 'Informações de contacto',
     followUs: 'Siga-nos',
@@ -661,7 +661,7 @@ export const pt: TranslationKeys = {
   
   meta: {
     title: 'BLM Consult | Especialista em transformação empresarial',
-    description: 'Ofereço serviços de consultoria especializada para transformação empresarial, planeamento estratégico e desenvolvimento organizacional. Beneficie do meu apoio profissional para crescimento sustentável e melhoria da QVCT.',
+    description: 'Oferecemos serviços de consultoria especializada para transformação empresarial, planeamento estratégico e desenvolvimento organizacional. Beneficie do nosso apoio profissional para crescimento sustentável e melhoria da QVCT.',
     keywords: 'consultoria, transformação empresarial, planeamento estratégico, coaching, formação'
   },
   
@@ -672,13 +672,13 @@ export const pt: TranslationKeys = {
       badge: 'Consultoria RH Especialista • Especializada em RPS',
       title: 'Consultoria',
       subtitle: 'RH & RPS',
-      description: 'Acompanho a sua organização na melhoria das condições de trabalho, na prevenção dos riscos psicossociais e na transformação sustentável das suas práticas RH.',
+      description: 'Acompanhamos a sua organização na melhoria das condições de trabalho, na prevenção dos riscos psicossociais e na transformação sustentável das suas práticas RH.',
       diagnosticButton: 'Diagnóstico gratuito',
       brochureButton: 'Descarregar brochura'
     },
     services: {
-      title: 'Os meus serviços de consultoria RH',
-      subtitle: 'Ofereço-lhe especialização abrangente para transformar de forma sustentável a sua organização',
+      title: 'Os nossos serviços de consultoria RH',
+      subtitle: 'Oferecemos-lhe especialização abrangente para transformar de forma sustentável a sua organização',
       rps: {
         title: 'Diagnóstico socio-organizacional',
         subtitle: 'Riscos Psicossociais (RPS)',
@@ -735,7 +735,7 @@ export const pt: TranslationKeys = {
       }
     },
     process: {
-      title: 'A minha abordagem de consultoria',
+      title: 'A nossa abordagem de consultoria',
       subtitle: 'Uma abordagem estruturada e comprovada para transformações sustentáveis',
       steps: {
         step1: {
@@ -757,7 +757,7 @@ export const pt: TranslationKeys = {
       }
     },
     expertise: {
-      title: 'A especialização em consultoria RH',
+      title: 'A nossa especialização em consultoria RH',
       subtitle: 'Uma abordagem profissional reconhecida e certificada',
       experience: {
         title: '15+ anos de experiência',
@@ -789,13 +789,13 @@ export const pt: TranslationKeys = {
       badge: 'Coaching profissional • Abordagem personalizada',
       title: 'Coaching',
       subtitle: 'Profissional',
-      description: 'Acompanho gestores, dirigentes e equipas nos seus desafios de evolução e transformação para desenvolver as competências necessárias num ambiente complexo.',
-      discoverButton: 'Descobrir a minha abordagem',
+      description: 'Acompanhamos gestores, dirigentes e equipas nos seus desafios de evolução e transformação para desenvolver as competências necessárias num ambiente complexo.',
+      discoverButton: 'Descobrir a nossa abordagem',
       quoteButton: 'Solicitar orçamento'
     },
     types: {
-      title: 'Os meus acompanhamentos de coaching',
-      subtitle: 'Proponho coaching individual e coletivo para desenvolver as suas competências e performance',
+      title: 'Os nossos acompanhamentos de coaching',
+      subtitle: 'Propomos coaching individual e coletivo para desenvolver as suas competências e performance',
       individuel: {
         title: 'Coaching individual',
         subtitle: 'Gestores, dirigentes, chefes de equipa',
@@ -819,8 +819,8 @@ export const pt: TranslationKeys = {
       }
     },
     contexte: {
-      title: 'Porque escolhi o coaching como abordagem',
-      subtitle: 'As evoluções do mundo profissional levaram-me a desenvolver novas competências e abordagens',
+      title: 'Porque escolhemos o coaching como abordagem',
+      subtitle: 'As evoluções do mundo profissional levaram-nos a desenvolver novas competências e abordagens',
       cycles: {
         title: 'Ciclos de mudança acelerados',
         description: 'As transformações organizacionais aceleram-se, necessitando de adaptação permanente'
@@ -839,8 +839,8 @@ export const pt: TranslationKeys = {
       }
     },
     problematiques: {
-      title: 'Problematiques que acompanho',
-      subtitle: 'Exploro consigo as questões e desafios levantados pelo seu trabalho',
+      title: 'Problematiques que acompanhamos',
+      subtitle: 'Exploramos consigo as questões e desafios levantados pelo seu trabalho',
       items: [
         'Início ou mudança de atividade',
         'Nomeação para um novo posto',
@@ -853,7 +853,7 @@ export const pt: TranslationKeys = {
       ]
     },
     approche: {
-      title: 'A minha abordagem de coaching',
+      title: 'A nossa abordagem de coaching',
       subtitle: 'Uma abordagem original fundada na análise do trabalho real e na transformação',
       travail: {
         title: 'Análise do trabalho real',
@@ -873,7 +873,7 @@ export const pt: TranslationKeys = {
       }
     },
     process: {
-      title: 'O processo de coaching',
+      title: 'O nosso processo de coaching',
       subtitle: 'Um processo estruturado para um acompanhamento eficaz e sustentável',
       steps: {
         step1: {
@@ -909,14 +909,14 @@ export const pt: TranslationKeys = {
       badge: 'Pedagogia ativa • Abordagem personalizada',
       title: 'Formações',
       subtitle: 'à medida',
-      description: 'Lylia Mokrani concebe e anima formações à medida, centradas no desenvolvimento dos colaboradores e no desempenho das organizações. Cada programa é pensado para se adaptar ao seu contexto, desafios, objetivos e cultura empresarial.',
+      description: 'BLM Consult concebe e anima formações à medida, centradas no desenvolvimento dos colaboradores e no desempenho das organizações. Cada programa é pensado para se adaptar ao seu contexto, desafios, objetivos e cultura empresarial.',
       programButton: 'Solicitar um programa',
       catalogButton: 'Ver catálogo',
       satisfaction: '95,6%',
       satisfactionText: 'Satisfação dos participantes'
     },
     approche: {
-      title: 'A minha abordagem pedagógica',
+      title: 'A nossa abordagem pedagógica',
       subtitle: 'Uma pedagogia ativa e personalizada para uma aprendizagem eficaz e sustentável',
       intra: {
         title: 'Formações intra-empresa',
@@ -944,8 +944,8 @@ export const pt: TranslationKeys = {
       }
     },
     axes: {
-      title: 'Os meus eixos de formação',
-      subtitle: 'Concebo programas especializados para desenvolver competências e melhorar o bem-estar no trabalho',
+      title: 'Os nossos eixos de formação',
+      subtitle: 'Concebemos programas especializados para desenvolver competências e melhorar o bem-estar no trabalho',
       efficacite: {
         title: '1. Eficácia profissional',
         description: 'Desenvolver uma postura profissional eficiente, ir além das competências técnicas para melhor evoluir no seu ambiente de trabalho.',
@@ -1014,7 +1014,7 @@ export const pt: TranslationKeys = {
   },
   blog: {
     title: 'Blog & Notícias',
-    subtitle: 'As minhas reflexões, conselhos e notícias sobre a melhoria das condições de trabalho',
+    subtitle: 'As nossas reflexões, conselhos e notícias sobre a melhoria das condições de trabalho',
     categories: {
       all: 'Todos',
       change: 'Gestão da mudança',

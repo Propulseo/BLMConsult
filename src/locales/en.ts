@@ -42,7 +42,7 @@ export const en: TranslationKeys = {
   home: {
     hero: {
       title: 'Transform your company with expert solutions',
-      subtitle: 'I offer comprehensive consulting services to help your organization achieve excellence and sustainable growth.',
+      subtitle: 'We offer comprehensive consulting services to help your organization achieve excellence and sustainable growth.',
       cta: 'Ready to start?',
       secondaryCta: 'Discover our approach',
       expertise: 'Expert consultants • + 15 years of experience',
@@ -53,7 +53,7 @@ export const en: TranslationKeys = {
     },
     features: {
       title: 'Why choose BLM Consult',
-      subtitle: 'I achieve results through proven methodologies and personalized approaches',
+      subtitle: 'We achieve results through proven methodologies and personalized approaches',
       feature1: {
         title: 'Expert consultation',
         description: 'Professional advice from industry experts with years of experience'
@@ -94,8 +94,8 @@ export const en: TranslationKeys = {
       }
     },
     servicesSection: {
-      title: 'My areas of expertise',
-      subtitle: 'I offer professional solutions for businesses, communities and institutions',
+      title: 'Our areas of expertise',
+      subtitle: 'We offer professional solutions for businesses, communities and institutions',
       onQuote: 'On quote',
       learnMore: 'Learn more'
     },
@@ -121,44 +121,44 @@ export const en: TranslationKeys = {
       }
     },
     process: {
-      title: 'My excellence approach',
-      subtitle: 'My structured and proven approach for lasting results',
+      title: 'Our excellence approach',
+      subtitle: 'Our structured and proven approach for lasting results',
       step1: {
         title: 'Initial diagnosis',
-        description: 'I analyze your context and challenges in depth'
+        description: 'We analyze your context and challenges in depth'
       },
       step2: {
         title: 'Personalized strategy',
-        description: 'I design a tailor-made action plan adapted to your needs'
+        description: 'We design a tailor-made action plan adapted to your needs'
       },
       step3: {
         title: 'Implementation',
-        description: 'I support you with regular follow-up'
+        description: 'We support you with regular follow-up'
       },
       step4: {
         title: 'Evaluation',
-        description: 'I measure results and make necessary adjustments'
+        description: 'We measure results and make necessary adjustments'
       },
-      learnMoreButton: 'Learn more about my method'
+      learnMoreButton: 'Learn more about our method'
     },
     blog: {
       post1: {
         title: 'The importance of social dialogue in business',
-        excerpt: 'How I help you create an environment conducive to constructive exchanges...',
+        excerpt: 'How we help you create an environment conducive to constructive exchanges...',
         category: 'Social Dialogue',
         date: 'June 1, 2025',
         readTime: '5 min'
       },
       post2: {
         title: 'Preventing psychosocial risks',
-        excerpt: 'My keys to effective RPS prevention at work...',
+        excerpt: 'Our keys to effective RPS prevention at work...',
         category: 'Prevention',
         date: 'June 8, 2025',
         readTime: '7 min'
       },
       post3: {
         title: 'The manager\'s role in QVCT',
-        excerpt: 'How I help you support managers to improve QVCT...',
+        excerpt: 'How we help you support managers to improve QVCT...',
         category: 'Management',
         date: 'June 15, 2025',
         readTime: '6 min'
@@ -176,9 +176,9 @@ export const en: TranslationKeys = {
   },
   
   about: {
-    title: 'About my expertise',
+    title: 'About our expertise',
     subtitle: 'Expert in organizational transformation',
-    content: 'I am an expert consultant dedicated to helping organizations reach their full potential through innovative solutions and personalized strategic support.',
+    content: 'BLM Consult is an expert consulting firm dedicated to helping organizations reach their full potential through innovative solutions and personalized strategic support.',
     hero: {
       badge: 'Lylia Mokrani • Founder BLM Consult',
       title: 'About',
@@ -340,19 +340,19 @@ export const en: TranslationKeys = {
   },
   
   services: {
-    title: 'My services',
-    subtitle: 'My complete solutions for your business needs',
+    title: 'Our services',
+    subtitle: 'Our complete solutions for your business needs',
     hero: {
       badge: 'Professional support • Tailored solutions',
-      title: 'My',
+      title: 'Our',
       subtitle: 'services',
-      description: 'I offer you excellent support to sustainably transform your working conditions and reveal your organization\'s potential',
-      discoverButton: 'Discover my services',
+      description: 'We offer you excellent support to sustainably transform your working conditions and reveal your organization\'s potential',
+      discoverButton: 'Discover our services',
       quoteButton: 'Request a quote'
     },
     expertise: {
       title: 'Areas of expertise',
-      subtitle: 'I offer you four complementary services for a complete transformation of your organization'
+      subtitle: 'We offer you four complementary services for a complete transformation of your organization'
     },
     mainServices: {
       conseil: {
@@ -514,7 +514,7 @@ export const en: TranslationKeys = {
       title: 'Ready to drive structural change within your organization?',
       subtitle: 'Contact us today for a free diagnostic and discover how our expertise can accompany you towards organizational excellence.',
       diagnosticButton: 'Free diagnostic',
-      brochureButton: 'Download my brochure',
+      brochureButton: 'Download our brochure',
       response48h: 'Response within 48h',
       personalizedQuote: 'Personalized quote',
       expertSupport: 'Expert support'
@@ -525,7 +525,7 @@ export const en: TranslationKeys = {
     },
     service1: {
       title: 'Strategic consulting',
-      description: 'My expert advice for organizational transformation and strategic planning',
+      description: 'Our expert advice for organizational transformation and strategic planning',
       features: [
         'Business strategy development',
         'Organizational assessment',
@@ -535,7 +535,7 @@ export const en: TranslationKeys = {
     },
     service2: {
       title: 'Professional coaching',
-      description: 'My individual and team coaching for leadership development',
+      description: 'Our individual and team coaching for leadership development',
       features: [
         'Executive coaching',
         'Team development',
@@ -545,7 +545,7 @@ export const en: TranslationKeys = {
     },
     service3: {
       title: 'Training programs',
-      description: 'My personalized training solutions for skills development',
+      description: 'Our personalized training solutions for skills development',
       features: [
         'Custom curriculum',
         'Interactive workshops',
@@ -556,7 +556,7 @@ export const en: TranslationKeys = {
   },
   
   contact: {
-    title: 'Contact Me',
+    title: 'Contact Us',
     subtitle: 'Let\'s talk about your projects and support needs. Every exchange with me starts with attentive listening to your challenges.',
     responseTime: 'Guaranteed response within 48h',
     whyBLM: {
@@ -640,7 +640,7 @@ export const en: TranslationKeys = {
   
   footer: {
     company: 'BLM Consult',
-    description: 'I transform companies through my expertise and innovative solutions.',
+    description: 'We transform companies through our expertise and innovative solutions.',
     quickLinks: 'Quick links',
     contact: 'Contact information',
     followUs: 'Follow us',
@@ -660,7 +660,7 @@ export const en: TranslationKeys = {
   
   meta: {
     title: 'BLM Consult | Business transformation expert',
-    description: 'I offer expert consulting services for business transformation, strategic planning and organizational development. Benefit from my professional support for sustainable growth and QVCT improvement.',
+    description: 'We offer expert consulting services for business transformation, strategic planning and organizational development. Benefit from our professional support for sustainable growth and QVCT improvement.',
     keywords: 'consulting, business transformation, strategic planning, coaching, training'
   },
   
@@ -671,13 +671,13 @@ export const en: TranslationKeys = {
       badge: 'Expert HR Consulting • Specialized in RPS',
       title: 'HR',
       subtitle: 'Consulting & RPS',
-      description: 'I support your organization in improving working conditions, preventing psychosocial risks and sustainably transforming your HR practices.',
+      description: 'We support your organization in improving working conditions, preventing psychosocial risks and sustainably transforming your HR practices.',
       diagnosticButton: 'Free diagnostic',
       brochureButton: 'Download brochure'
     },
     services: {
-      title: 'My HR consulting services',
-      subtitle: 'I offer you comprehensive expertise to sustainably transform your organization',
+      title: 'Our HR consulting services',
+      subtitle: 'We offer you comprehensive expertise to sustainably transform your organization',
       rps: {
         title: 'Socio-organizational diagnostic',
         subtitle: 'Psychosocial Risks (RPS)',
@@ -734,7 +734,7 @@ export const en: TranslationKeys = {
       }
     },
     process: {
-      title: 'My consulting approach',
+      title: 'Our consulting approach',
       subtitle: 'A structured and proven approach for sustainable transformations',
       steps: {
         step1: {
@@ -756,7 +756,7 @@ export const en: TranslationKeys = {
       }
     },
     expertise: {
-      title: 'HR consulting expertise',
+      title: 'Our HR consulting expertise',
       subtitle: 'A recognized and certified professional approach',
       experience: {
         title: '15+ years of experience',
@@ -788,13 +788,13 @@ export const en: TranslationKeys = {
       badge: 'Professional coaching • Tailored approach',
       title: 'Professional',
       subtitle: 'Coaching',
-      description: 'I support managers, leaders and teams in their development and transformation challenges to develop the necessary skills in a complex environment.',
-      discoverButton: 'Discover my approach',
+      description: 'We support managers, leaders and teams in their development and transformation challenges to develop the necessary skills in a complex environment.',
+      discoverButton: 'Discover our approach',
       quoteButton: 'Request a quote'
     },
     types: {
-      title: 'My coaching support',
-      subtitle: 'I offer individual and collective coaching to develop your skills and performance',
+      title: 'Our coaching support',
+      subtitle: 'We offer individual and collective coaching to develop your skills and performance',
       individuel: {
         title: 'Individual coaching',
         subtitle: 'Managers, leaders, team leaders',
@@ -818,8 +818,8 @@ export const en: TranslationKeys = {
       }
     },
     contexte: {
-      title: 'Why I chose coaching as an approach',
-      subtitle: 'The evolution of the professional world has led me to develop new skills and approaches',
+      title: 'Why we chose coaching as an approach',
+      subtitle: 'The evolution of the professional world has led us to develop new skills and approaches',
       cycles: {
         title: 'Accelerated change cycles',
         description: 'Organizational transformations are accelerating, requiring permanent adaptation'
@@ -838,8 +838,8 @@ export const en: TranslationKeys = {
       }
     },
     problematiques: {
-      title: 'Issues I support',
-      subtitle: 'I explore with you the questions and challenges raised by your work',
+      title: 'Issues we support',
+      subtitle: 'We explore with you the questions and challenges raised by your work',
       items: [
         'Starting or changing activity',
         'Appointment to a new position',
@@ -852,7 +852,7 @@ export const en: TranslationKeys = {
       ]
     },
     approche: {
-      title: 'My coaching approach',
+      title: 'Our coaching approach',
       subtitle: 'An original approach based on real work analysis and transformation',
       travail: {
         title: 'Real work analysis',
@@ -872,7 +872,7 @@ export const en: TranslationKeys = {
       }
     },
     process: {
-      title: 'The coaching process',
+      title: 'Our coaching process',
       subtitle: 'A structured process for effective and sustainable support',
       steps: {
         step1: {
@@ -908,14 +908,14 @@ export const en: TranslationKeys = {
       badge: 'Active pedagogy • Personalized approach',
       title: 'Custom',
       subtitle: 'Training',
-      description: 'Lylia Mokrani designs and delivers custom training, focused on employee development and organizational performance. Each program is designed to adapt to your context, challenges, objectives and corporate culture.',
+      description: 'BLM Consult designs and delivers custom training, focused on employee development and organizational performance. Each program is designed to adapt to your context, challenges, objectives and corporate culture.',
       programButton: 'Request a program',
       catalogButton: 'View catalog',
       satisfaction: '95.6%',
       satisfactionText: 'Participant satisfaction'
     },
     approche: {
-      title: 'My pedagogical approach',
+      title: 'Our pedagogical approach',
       subtitle: 'Active and personalized pedagogy for effective and sustainable learning',
       intra: {
         title: 'In-house training',
@@ -943,8 +943,8 @@ export const en: TranslationKeys = {
       }
     },
     axes: {
-      title: 'My training areas',
-      subtitle: 'I design specialized programs to develop skills and improve workplace well-being',
+      title: 'Our training areas',
+      subtitle: 'We design specialized programs to develop skills and improve workplace well-being',
       efficacite: {
         title: '1. Professional effectiveness',
         description: 'Develop an efficient professional posture, go beyond technical skills to better evolve in your work environment.',
@@ -1013,7 +1013,7 @@ export const en: TranslationKeys = {
   },
   blog: {
     title: 'Blog & News',
-    subtitle: 'My thoughts, advice and news on improving working conditions',
+    subtitle: 'Our thoughts, advice and news on improving working conditions',
     categories: {
       all: 'All',
       change: 'Change management',
