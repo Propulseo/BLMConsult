@@ -159,9 +159,15 @@ const Blog: React.FC<BlogProps> = ({ setCurrentPage }) => {
                   </h3>
                   <p className="text-gray-600 mb-6 leading-relaxed text-base">{article.excerpt}</p>
                   <div className="flex items-center justify-between">
-                    <div className="flex items-center text-sm text-gray-500">
-                      <Clock className="w-4 h-4 mr-1" />
-                      {article.readTime}
+                    <div className="flex items-center space-x-4 text-sm text-gray-500">
+                      <div className="flex items-center">
+                        <Calendar className="w-4 h-4 mr-1" />
+                        {article.date}
+                      </div>
+                      <div className="flex items-center">
+                        <Clock className="w-4 h-4 mr-1" />
+                        {article.readTime}
+                      </div>
                     </div>
                     <button 
                       onClick={() => setCurrentPage && setCurrentPage(article.id)}
