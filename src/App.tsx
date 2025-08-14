@@ -20,6 +20,14 @@ import ScrollProgressBar from './components/ScrollProgressBar';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
+  
+  // Add viewport meta tag for proper mobile scaling
+  React.useEffect(() => {
+    const viewport = document.querySelector('meta[name="viewport"]');
+    if (viewport) {
+      viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes');
+    }
+  }, []);
 
   const renderPage = () => {
     switch (currentPage) {

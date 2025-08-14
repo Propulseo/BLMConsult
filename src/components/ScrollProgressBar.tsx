@@ -5,9 +5,9 @@ const ScrollProgressBar: React.FC = () => {
   const scrollProgress = useScrollProgress();
 
   return (
-    <div className="fixed top-0 left-0 w-full h-1 bg-gray-200 z-50">
+    <div className="fixed top-0 left-0 w-full h-0.5 sm:h-1 bg-gray-200 z-50">
       <div
-        className="h-full bg-gradient-to-r from-blue-600 to-blue-700 transition-all duration-150 ease-out"
+        className="h-full bg-gradient-to-r from-ocean-600 to-ocean-700 transition-all duration-150 ease-out"
         style={{ width: `${scrollProgress}%` }}
       />
     </div>

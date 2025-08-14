@@ -46,12 +46,14 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({
     <div
       ref={elementRef}
       className={`
+        transition-all duration-500 ease-out
         ${className}
         ${isVisible ? getAnimationClass() : 'opacity-0'}
         ${getDelayClass()}
       `}
       style={{
-        animationDelay: delay ? `${delay}ms` : undefined
+        animationDelay: delay ? `${delay}ms` : undefined,
+        willChange: 'transform, opacity'
       }}
     >
       {children}

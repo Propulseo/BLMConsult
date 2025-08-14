@@ -6,13 +6,14 @@ const PolitiqueConfidentialite: React.FC = () => {
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <section className="bg-white py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 lg:pt-16">
           <div className="text-center">
-            <Shield className="w-16 h-16 text-blue-600 mx-auto mb-6" />
+            <Shield className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 text-blue-600 mx-auto mb-4 sm:mb-6" />
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            <h1 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
               Politique de Confidentialité
             </h1>
-            <p className="text-lg text-gray-600">
+            <p className="text-base sm:text-lg text-gray-600">
               Protection et traitement de vos données personnelles
             </p>
           </div>
@@ -20,17 +21,17 @@ const PolitiqueConfidentialite: React.FC = () => {
       </section>
 
       {/* Content */}
-      <section className="py-16">
+      <section className="py-8 sm:py-12 lg:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-2xl shadow-lg p-8 space-y-8">
+          <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 space-y-6 sm:space-y-8">
             
             {/* Introduction */}
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                <Eye className="w-6 h-6 text-blue-600 mr-3" />
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 flex items-center">
+                <Eye className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 mr-2 sm:mr-3" />
                 Introduction
               </h2>
-              <div className="prose prose-gray max-w-none">
+              <div className="prose prose-gray max-w-none text-sm sm:text-base">
                 <p>
                   BLM Consult s'engage à protéger la confidentialité de vos données personnelles. 
                   Cette politique explique comment nous collectons, utilisons et protégeons 
@@ -42,27 +43,27 @@ const PolitiqueConfidentialite: React.FC = () => {
 
             {/* Responsable du traitement */}
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                <UserCheck className="w-6 h-6 text-blue-600 mr-3" />
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 flex items-center">
+                <UserCheck className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 mr-2 sm:mr-3" />
                 Responsable du traitement
               </h2>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <p><strong>Responsable :</strong> Lylia Mokrani - BLM Consult</p>
-                <p><strong>Email :</strong> contact@blmconsult.fr</p>
-                <p><strong>Adresse :</strong> France</p>
+              <div className="bg-gray-50 p-4 sm:p-6 rounded-lg space-y-2">
+                <p className="text-sm sm:text-base"><strong>Responsable :</strong> Lylia Mokrani - BLM Consult</p>
+                <p className="text-sm sm:text-base"><strong>Email :</strong> contact@blmconsult.fr</p>
+                <p className="text-sm sm:text-base"><strong>Adresse :</strong> France</p>
               </div>
             </div>
 
             {/* Données collectées */}
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                <Database className="w-6 h-6 text-blue-600 mr-3" />
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 flex items-center">
+                <Database className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 mr-2 sm:mr-3" />
                 Données collectées
               </h2>
-              <div className="space-y-4">
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="font-bold text-gray-900 mb-3">Données d'identification :</h3>
-                  <ul className="list-disc list-inside space-y-1 text-gray-700">
+              <div className="space-y-3 sm:space-y-4">
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-lg">
+                  <h3 className="font-bold text-gray-900 mb-2 sm:mb-3 text-sm sm:text-base">Données d'identification :</h3>
+                  <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm sm:text-base">
                     <li>Nom et prénom</li>
                     <li>Adresse email</li>
                     <li>Numéro de téléphone</li>
@@ -71,9 +72,9 @@ const PolitiqueConfidentialite: React.FC = () => {
                   </ul>
                 </div>
                 
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="font-bold text-gray-900 mb-3">Données de navigation :</h3>
-                  <ul className="list-disc list-inside space-y-1 text-gray-700">
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-lg">
+                  <h3 className="font-bold text-gray-900 mb-2 sm:mb-3 text-sm sm:text-base">Données de navigation :</h3>
+                  <ul className="list-disc list-inside space-y-1 text-gray-700 text-sm sm:text-base">
                     <li>Adresse IP</li>
                     <li>Type de navigateur</li>
                     <li>Pages visitées</li>
@@ -118,12 +119,12 @@ const PolitiqueConfidentialite: React.FC = () => {
 
             {/* Conservation des données */}
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                <Lock className="w-6 h-6 text-blue-600 mr-3" />
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 flex items-center">
+                <Lock className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 mr-2 sm:mr-3" />
                 Conservation des données
               </h2>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <ul className="space-y-2 text-gray-700">
+              <div className="bg-gray-50 p-4 sm:p-6 rounded-lg">
+                <ul className="space-y-2 text-gray-700 text-sm sm:text-base">
                   <li><strong>Prospects :</strong> 3 ans à compter du dernier contact</li>
                   <li><strong>Clients :</strong> 10 ans à compter de la fin de la relation contractuelle</li>
                   <li><strong>Données de navigation :</strong> 13 mois maximum</li>
@@ -155,11 +156,11 @@ const PolitiqueConfidentialite: React.FC = () => {
 
             {/* Cookies */}
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                <Cookie className="w-6 h-6 text-blue-600 mr-3" />
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 flex items-center">
+                <Cookie className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 mr-2 sm:mr-3" />
                 Cookies
               </h2>
-              <div className="prose prose-gray max-w-none">
+              <div className="prose prose-gray max-w-none text-sm sm:text-base">
                 <p>
                   Notre site utilise des cookies techniques nécessaires au bon fonctionnement 
                   du site. Aucun cookie de tracking ou publicitaire n'est utilisé sans votre 
@@ -212,8 +213,8 @@ const PolitiqueConfidentialite: React.FC = () => {
             </div>
 
             {/* Date de mise à jour */}
-            <div className="border-t pt-6">
-              <p className="text-sm text-gray-500 text-center">
+            <div className="border-t pt-4 sm:pt-6">
+              <p className="text-xs sm:text-sm text-gray-500 text-center">
                 <strong>Dernière mise à jour :</strong> {new Date().toLocaleDateString('fr-FR')}
               </p>
             </div>
