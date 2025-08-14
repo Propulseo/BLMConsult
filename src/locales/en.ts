@@ -146,21 +146,21 @@ export const en: TranslationKeys = {
         title: 'The importance of social dialogue in business',
         excerpt: 'How I help you create an environment conducive to constructive exchanges...',
         category: 'Social Dialogue',
-        date: '15 March 2024',
+        date: 'June 1, 2025',
         readTime: '5 min'
       },
       post2: {
         title: 'Preventing psychosocial risks',
         excerpt: 'My keys to effective RPS prevention at work...',
         category: 'Prevention',
-        date: '28 February 2024',
+        date: 'June 8, 2025',
         readTime: '7 min'
       },
       post3: {
         title: 'The manager\'s role in QVCT',
         excerpt: 'How I help you support managers to improve QVCT...',
         category: 'Management',
-        date: '12 February 2024',
+        date: 'June 15, 2025',
         readTime: '6 min'
       }
     },
@@ -1027,42 +1027,42 @@ export const en: TranslationKeys = {
       change: {
         title: 'Change management: mistakes to avoid to succeed in your internal transformations',
         excerpt: 'A spotlight on the most common pitfalls during transition and advice on how to unite your teams around change.',
-        date: 'March 20, 2024',
+        date: 'June 1, 2025',
         readTime: '5 min',
         category: 'Change management'
       },
       managers: {
         title: 'Supporting managers to face the complexity of modern work',
         excerpt: 'A look at current management challenges (mental load, multi-belonging, uncertainty…) and proposed support solutions.',
-        date: 'March 15, 2024',
+        date: 'June 8, 2025',
         readTime: '6 min',
         category: 'Management'
       },
       crisis: {
         title: 'Managing a crisis at work: the right reflexes for managers',
         excerpt: 'A toolbox to support a critical situation (tensions, accidents, reorganization…) in a structured and human way.',
-        date: 'March 8, 2024',
+        date: 'June 15, 2025',
         readTime: '6 min',
         category: 'Crisis management'
       },
       collaboration: {
         title: 'How to improve team collaboration through custom training',
         excerpt: 'The benefits of a training plan adjusted to field needs to streamline communication and strengthen collective intelligence.',
-        date: 'March 2, 2024',
+        date: 'June 22, 2025',
         readTime: '7 min',
         category: 'Training'
       },
       mediation: {
         title: 'Mediation in business: when and why call on an external mediator',
         excerpt: 'A breakdown of the role of mediation in conflict resolution and restoring dialogue within teams.',
-        date: 'February 25, 2024',
+        date: 'June 29, 2025',
         readTime: '8 min',
         category: 'Mediation'
       },
       coaching: {
         title: 'Professional coaching: a powerful tool to reveal individual and collective talents',
         excerpt: 'How coaching supports the evolution of professional postures and supports skills development.',
-        date: 'February 18, 2024',
+        date: 'July 6, 2025',
         readTime: '6 min',
         category: 'Coaching'
       }

@@ -146,21 +146,21 @@ export const fr: TranslationKeys = {
         title: 'L\'importance du dialogue social en entreprise',
         excerpt: 'Comment je vous aide à créer un environnement propice aux échanges constructifs...',
         category: 'Dialogue Social',
-        date: '15 Mars 2024',
+        date: '1 Juin 2025',
         readTime: '5 min'
       },
       post2: {
         title: 'Prévenir les risques psychosociaux',
         excerpt: 'Mes clés pour une prévention efficace des RPS au travail...',
         category: 'Prévention',
-        date: '28 Février 2024',
+        date: '8 Juin 2025',
         readTime: '7 min'
       },
       post3: {
         title: 'Le rôle du manager dans la QVCT',
         excerpt: 'Comment je vous aide à accompagner les managers pour améliorer la QVCT...',
         category: 'Management',
-        date: '12 Février 2024',
+        date: '15 Juin 2025',
         readTime: '6 min'
       }
     }
@@ -1026,42 +1026,42 @@ export const fr: TranslationKeys = {
       change: {
         title: 'Conduite du changement : les erreurs à éviter pour réussir vos transformations internes',
         excerpt: 'Une mise en lumière des pièges les plus fréquents en phase de transition et des conseils pour fédérer vos équipes autour du changement.',
-        date: '20 Mars 2024',
+        date: '1 Juin 2025',
         readTime: '5 min',
         category: 'Conduite du changement'
       },
       managers: {
         title: 'Accompagner les managers à faire face à la complexité du travail moderne',
         excerpt: 'Un regard sur les défis actuels du management (charge mentale, multi-appartenance, incertitude…) et les solutions d\'accompagnement proposées.',
-        date: '15 Mars 2024',
+        date: '8 Juin 2025',
         readTime: '6 min',
         category: 'Management'
       },
       crisis: {
         title: 'Gérer une crise au travail : les bons réflexes pour les managers',
         excerpt: 'Une boîte à outils pour accompagner une situation critique (tensions, accidents, réorganisation…) de manière structurée et humaine.',
-        date: '8 Mars 2024',
+        date: '15 Juin 2025',
         readTime: '6 min',
         category: 'Gestion de crise'
       },
       collaboration: {
         title: 'Comment améliorer la collaboration d\'équipe grâce à la formation sur-mesure',
         excerpt: 'Les apports d\'un plan de formation ajusté aux besoins terrain pour fluidifier la communication et renforcer l\'intelligence collective.',
-        date: '2 Mars 2024',
+        date: '22 Juin 2025',
         readTime: '7 min',
         category: 'Formation'
       },
       mediation: {
         title: 'Médiation en entreprise : quand et pourquoi faire appel à un médiateur externe',
         excerpt: 'Un décryptage du rôle de la médiation dans la résolution de conflits et la restauration du dialogue au sein des équipes.',
-        date: '25 Février 2024',
+        date: '29 Juin 2025',
         readTime: '8 min',
         category: 'Médiation'
       },
       coaching: {
         title: 'Coaching professionnel : un outil puissant pour révéler les talents individuels et collectifs',
         excerpt: 'Comment le coaching accompagne l\'évolution des postures professionnelles et soutient le développement des compétences.',
-        date: '18 Février 2024',
+        date: '6 Juillet 2025',
         readTime: '6 min',
         category: 'Coaching'
       }

@@ -146,21 +146,21 @@ export const pt: TranslationKeys = {
         title: 'A importância do diálogo social na empresa',
         excerpt: 'Como o ajudo a criar um ambiente propício a trocas construtivas...',
         category: 'Diálogo Social',
-        date: '15 Março 2024',
+        date: '1 Junho 2025',
         readTime: '5 min'
       },
       post2: {
         title: 'Prevenir os riscos psicossociais',
         excerpt: 'As minhas chaves para uma prevenção eficaz dos RPS no trabalho...',
         category: 'Prevenção',
-        date: '28 Fevereiro 2024',
+        date: '8 Junho 2025',
         readTime: '7 min'
       },
       post3: {
         title: 'O papel do gestor na QVCT',
         excerpt: 'Como acompanhar os gestores para melhorar a QVCT...',
         category: 'Gestão',
-        date: '12 Fevereiro 2024',
+        date: '15 Junho 2025',
         readTime: '6 min'
       }
     }
@@ -1028,42 +1028,42 @@ export const pt: TranslationKeys = {
       change: {
         title: 'Gestão da mudança: erros a evitar para ter sucesso nas suas transformações internas',
         excerpt: 'Um foco sobre as armadilhas mais comuns durante a transição e conselhos para unir as suas equipas em torno da mudança.',
-        date: '20 de Março de 2024',
+        date: '1 de Junho de 2025',
         readTime: '5 min',
         category: 'Gestão da mudança'
       },
       managers: {
         title: 'Apoiar os gestores a enfrentar a complexidade do trabalho moderno',
         excerpt: 'Um olhar sobre os desafios atuais da gestão (carga mental, multi-pertença, incerteza…) e soluções de apoio propostas.',
-        date: '15 de Março de 2024',
+        date: '8 de Junho de 2025',
         readTime: '6 min',
         category: 'Gestão'
       },
       crisis: {
         title: 'Gerir uma crise no trabalho: os bons reflexos para os gestores',
         excerpt: 'Uma caixa de ferramentas para apoiar uma situação crítica (tensões, acidentes, reorganização…) de forma estruturada e humana.',
-        date: '8 de Março de 2024',
+        date: '15 de Junho de 2025',
         readTime: '6 min',
         category: 'Gestão de crise'
       },
       collaboration: {
         title: 'Como melhorar a colaboração de equipa através da formação à medida',
         excerpt: 'Os benefícios de um plano de formação ajustado às necessidades do terreno para fluidificar a comunicação e reforçar a inteligência coletiva.',
-        date: '2 de Março de 2024',
+        date: '22 de Junho de 2025',
         readTime: '7 min',
         category: 'Formação'
       },
       mediation: {
         title: 'Mediação na empresa: quando e porquê recorrer a um mediador externo',
         excerpt: 'Uma análise do papel da mediação na resolução de conflitos e restauração do diálogo dentro das equipas.',
-        date: '25 de Fevereiro de 2024',
+        date: '29 de Junho de 2025',
         readTime: '8 min',
         category: 'Mediação'
       },
       coaching: {
         title: 'Coaching profissional: uma ferramenta poderosa para revelar talentos individuais e coletivos',
         excerpt: 'Como o coaching apoia a evolução das posturas profissionais e apoia o desenvolvimento de competências.',
-        date: '18 de Fevereiro de 2024',
+        date: '6 de Julho de 2025',
         readTime: '6 min',
         category: 'Coaching'
       }
