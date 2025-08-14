@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Briefcase, Users, Award, Target, Heart, Shield, Zap, CheckCircle, Star, Clock, Lock, FileText, UserCheck, Eye, MessageCircle } from 'lucide-react';
+import { GraduationCap, Briefcase, Users, Award, Target, Heart, Shield, Zap, CheckCircle, Star, Clock, Lock, FileText, UserCheck, Eye, MessageCircle, Linkedin } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import SEOHead from '../components/SEOHead';
 
@@ -209,6 +209,15 @@ const About: React.FC = () => {
                     <div>
                       <p className="font-bold text-gray-900">{t.about.hero.profile.name}</p>
                       <p className="text-sm text-gray-600">{t.about.hero.profile.role}</p>
+                      <a 
+                        href="https://www.linkedin.com/in/lylia-mokrani" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-blue-600 hover:text-blue-700 text-sm font-medium mt-2 transition-colors duration-300"
+                      >
+                        <Linkedin className="w-4 h-4 mr-1" />
+                        LinkedIn
+                      </a>
                     </div>
                   </div>
                 </div>

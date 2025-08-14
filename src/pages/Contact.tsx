@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Mail, Phone, MapPin, Send, Clock, MessageCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Clock, MessageCircle, Linkedin } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import SEOHead from '../components/SEOHead';
 
@@ -290,6 +290,23 @@ const Contact: React.FC<ContactProps> = ({ setCurrentPage }) => {
                     </div>
                   </div>
                 ))}
+              </div>
+              
+              {/* LinkedIn Profile */}
+              <div className="mt-8 pt-6 border-t border-gray-200">
+                <div className="text-center">
+                  <h4 className="text-lg font-semibold text-gray-900 mb-4">Suivez-moi sur LinkedIn</h4>
+                  <a 
+                    href="https://www.linkedin.com/in/lylia-mokrani" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-700 transition-colors duration-300 shadow-lg"
+                  >
+                    <Linkedin className="w-5 h-5 mr-2" />
+                    Lylia Mokrani
+                  </a>
+                  <p className="text-sm text-gray-500 mt-2">Actualités et conseils RH</p>
+                </div>
               </div>
               
             </div>
