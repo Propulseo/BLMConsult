@@ -84,23 +84,23 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
       isScrolled ? 'bg-ocean-700/95 backdrop-blur-sm' : 'bg-ocean-700'
     }`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex justify-between items-center h-24">
+        <div className="flex justify-between items-center h-16 sm:h-20 lg:h-24">
           {/* Logo professionnel */}
           <div 
-            className="flex items-end cursor-pointer group transition-transform duration-300 hover:scale-105 mt-4"
+            className="flex items-center cursor-pointer group transition-transform duration-300 hover:scale-105"
             onClick={() => handleNavigation('home')}
           >
             <div className="relative">
               <img 
                 src="https://lh3.googleusercontent.com/pw/AP1GczMcU-fT-3oC5vkVGYbOMwJfuPiS-k35vykCZZ3q_oJP4JEyX52vdiUh_rtiSt8yCyHEvZc-Df8nL_5jY85OBa2MMk4c57szEiB74iOK8YVhUmGS3SIDVpZTT5lJymOL3Ik34eq-KyG5z65UgXjB8v7-=w1024-h1024-s-no-gm?authuser=0"
                 alt="BLM Consult Logo"
-                className="h-44 w-44 object-contain group-hover:scale-105 transition-transform duration-300 rounded-lg"
+                className="h-12 w-12 sm:h-16 sm:w-16 lg:h-20 lg:w-20 object-contain group-hover:scale-105 transition-transform duration-300 rounded-lg"
               />
             </div>
           </div>
 
           {/* Navigation desktop */}
-          <nav className="hidden lg:flex items-center justify-center space-x-2 flex-1 mx-8">
+          <nav className="hidden lg:flex items-center justify-center space-x-4 flex-1 mx-8">
             {menuItems.map((item) => (
               <div key={item.id} className="relative group">
                 {item.hasDropdown ? (
@@ -111,7 +111,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                   >
                     <button
                      onClick={() => handleNavigation('services')}
-                      className={`nav-item flex items-center px-5 py-3 text-sm font-semibold rounded-2xl transition-all duration-300 ${
+                      className={`nav-item flex items-center px-6 py-3 text-sm font-semibold rounded-2xl transition-all duration-300 min-h-12 ${
                         currentPage === item.id || currentPage.startsWith('service')
                           ? 'text-ocean-700 bg-white/90' 
                           : 'text-white hover:text-ocean-100 hover:bg-ocean-600/50'
@@ -129,7 +129,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                     <div className="absolute top-full left-0 w-full h-2 bg-transparent" />
                     
                     {servicesDropdown && (
-                      <div className="absolute top-full left-0 mt-3 w-80 bg-white rounded-3xl shadow-large border border-ocean-100 py-4 z-50 animate-slide-down">
+                      <div className="absolute top-full left-0 mt-3 w-72 sm:w-80 bg-white rounded-3xl shadow-large border border-ocean-100 py-4 z-50 animate-slide-down">
                         {/* Arrow pointer */}
                         <div className="absolute -top-2 left-8 w-4 h-4 bg-white border-l border-t border-ocean-100 transform rotate-45 rounded-tl-sm"></div>
                         
@@ -137,7 +137,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                           <button
                             key={dropItem.id}
                             onClick={() => handleNavigation(dropItem.id)}
-                            className="block w-full text-left px-8 py-4 hover:bg-ocean-50/70 transition-all duration-300 group/item rounded-2xl mx-2 hover:translate-x-1"
+                            className="block w-full text-left px-6 sm:px-8 py-4 hover:bg-ocean-50/70 transition-all duration-200 group/item rounded-2xl mx-2 hover:translate-x-1 min-h-12"
                           >
                             <div className="flex flex-col">
                               <span className="text-base font-semibold text-ocean-800 group-hover/item:text-ocean-600 transition-colors">
@@ -155,7 +155,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                 ) : (
                   <button
                     onClick={() => handleNavigation(item.id)}
-                    className={`nav-item px-5 py-3 text-sm font-semibold rounded-2xl transition-all duration-300 ${
+                    className={`nav-item px-6 py-3 text-sm font-semibold rounded-2xl transition-all duration-300 min-h-12 ${
                       currentPage === item.id 
                         ? 'text-ocean-700 bg-white/90'
                         : 'text-white hover:text-ocean-100 hover:bg-ocean-600/50'
@@ -184,13 +184,12 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
           </div>
 
           {/* Menu mobile */}
-          <div className="lg:hidden flex items-center space-x-3">
+          <div className="lg:hidden flex items-center space-x-2">
             <a 
               href="https://www.linkedin.com/in/lylia-mokrani-06385439/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-ocean-100 transition-colors duration-300 p-2 rounded-lg hover:bg-ocean-600/70"
-              className="text-white hover:text-ocean-100 transition-colors duration-200 p-2 rounded-lg hover:bg-ocean-600/30"
+              className="text-white hover:text-ocean-100 transition-colors duration-200 p-3 rounded-lg hover:bg-ocean-600/30 min-h-12 min-w-12 flex items-center justify-center"
               aria-label="LinkedIn Lylia Mokrani"
             >
               <Linkedin className="w-5 h-5" />
@@ -198,8 +197,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
             <LanguageSelector variant="compact" showLabel={false} />
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-3 text-white hover:text-ocean-100 transition-all duration-300 rounded-2xl hover:bg-ocean-600/70 icon-hover"
-              className="p-3 text-white hover:text-ocean-100 transition-all duration-200 rounded-2xl hover:bg-ocean-600/30"
+              className="p-3 text-white hover:text-ocean-100 transition-all duration-200 rounded-2xl hover:bg-ocean-600/30 min-h-12 min-w-12 flex items-center justify-center"
               aria-expanded={isMenuOpen}
               aria-label="Toggle navigation menu"
             >
@@ -214,12 +212,12 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
         <div className={`lg:hidden border-t border-ocean-600 shadow-medium animate-slide-down ${
           isScrolled ? 'bg-ocean-800/95 backdrop-blur-sm' : 'bg-ocean-800'
         }`}>
-          <nav className="px-6 py-8 space-y-2 max-h-96 overflow-y-auto">
+          <nav className="px-4 sm:px-6 py-6 space-y-1 max-h-80 overflow-y-auto">
             {menuItems.map((item) => (
               <div key={item.id}>
                 <button
                   onClick={() => handleNavigation(item.id)}
-                  className={`block w-full text-left px-5 py-4 rounded-2xl text-base font-semibold transition-all duration-300 hover:translate-x-1 ${
+                  className={`block w-full text-left px-4 py-4 rounded-xl text-base font-semibold transition-all duration-200 min-h-12 ${
                     currentPage === item.id
                       ? 'text-ocean-700 bg-white shadow-inner-soft'
                       : 'text-white hover:text-ocean-100 hover:bg-ocean-600/70'
@@ -228,13 +226,12 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                   {item.label}
                 </button>
                 {item.hasDropdown && (
-                  <div className="ml-6 mt-3 space-y-2">
+                  <div className="ml-4 mt-2 space-y-1">
                     {item.dropdownItems?.map((dropItem) => (
                       <button
                         key={dropItem.id}
                         onClick={() => handleNavigation(dropItem.id)}
-                        className="block w-full text-left px-4 py-3 text-sm text-ocean-200 hover:text-white hover:bg-ocean-600/70 rounded-xl transition-all duration-300 hover:translate-x-1"
-                        className="block w-full text-left px-4 py-3 text-sm text-ocean-200 hover:text-white hover:bg-ocean-600/30 rounded-xl transition-all duration-200"
+                        className="block w-full text-left px-4 py-3 text-sm text-ocean-200 hover:text-white hover:bg-ocean-600/30 rounded-xl transition-all duration-200 min-h-10"
                       >
                         <div className="flex flex-col">
                           <span className="font-medium">{dropItem.label}</span>
@@ -248,7 +245,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
             ))}
             
             {/* Mobile Language Selector */}
-            <div className="pt-6 border-t border-ocean-600">
+            <div className="pt-4 border-t border-ocean-600">
               <LanguageSelector variant="default" className="w-full" />
             </div>
           </nav>

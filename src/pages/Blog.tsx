@@ -86,7 +86,7 @@ const Blog: React.FC<BlogProps> = ({ setCurrentPage }) => {
       />
       
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-blue-50 to-white overflow-hidden">
+      <section className="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-blue-50 to-white overflow-hidden pt-16 sm:pt-20 lg:pt-16">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
@@ -98,23 +98,23 @@ const Blog: React.FC<BlogProps> = ({ setCurrentPage }) => {
         </div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h1 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
             {t.blog.title}
           </h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-blue-100 max-w-3xl mx-auto">
             {t.blog.subtitle}
           </p>
         </div>
       </section>
 
       {/* Categories */}
-      <section className="py-6 bg-white border-b border-gray-200">
+      <section className="py-4 sm:py-6 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-4">
             {categories.map((category, index) => (
               <button
                 key={index}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-300 ${
+                className={`px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition-colors duration-300 min-h-10 ${
                   index === 0
                     ? 'bg-blue-600 text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-blue-50 hover:text-blue-600'
@@ -129,30 +129,31 @@ const Blog: React.FC<BlogProps> = ({ setCurrentPage }) => {
 
 
       {/* Articles Grid */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-10 sm:py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
             {articles.map((article, index) => (
               <article key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-shadow duration-300">
-                <div className="h-56 overflow-hidden">
+                <div className="h-40 sm:h-48 lg:h-56 overflow-hidden">
                   <img 
                     src={article.image} 
                     alt={article.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
                   />
                 </div>
-                <div className="p-8">
-                  <div className="flex items-center mb-3">
-                    <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-medium">
+                <div className="p-6 sm:p-8">
+                  <div className="flex items-center mb-2 sm:mb-3">
+                    <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-medium whitespace-nowrap">
                       {article.category}
                     </span>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors leading-tight">
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 sm:mb-4 group-hover:text-blue-600 transition-colors leading-tight">
                     {article.title}
                   </h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed text-base">{article.excerpt}</p>
+                  <p className="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">{article.excerpt}</p>
                   <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-4 text-sm text-gray-500">
+                    <div className="flex flex-col xs:flex-row items-start xs:items-center space-y-1 xs:space-y-0 xs:space-x-3 sm:space-x-4 text-xs sm:text-sm text-gray-500">
                       <div className="flex items-center">
                         <Calendar className="w-4 h-4 mr-1" />
                         {article.date}
@@ -164,7 +165,7 @@ const Blog: React.FC<BlogProps> = ({ setCurrentPage }) => {
                     </div>
                     <button 
                       onClick={() => setCurrentPage && setCurrentPage(article.id)}
-                      className="text-blue-600 hover:text-blue-700 font-medium text-sm cursor-pointer"
+                      className="text-blue-600 hover:text-blue-700 font-medium text-xs sm:text-sm cursor-pointer whitespace-nowrap min-h-10 flex items-center"
                     >
                       {t.blog.common.readMore}
                     </button>

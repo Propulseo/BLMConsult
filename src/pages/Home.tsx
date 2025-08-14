@@ -199,7 +199,7 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
       />
       
       {/* Hero Section Professionnel */}
-      <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-ocean-50 via-white to-ocean-100">
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-ocean-50 via-white to-ocean-100 pt-16 sm:pt-20 lg:pt-0">
         {/* Background with modern gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-ocean-100/50 via-transparent to-ocean-200/30"></div>
         <div className="absolute inset-0 bg-gradient-to-tr from-ocean-50/40 via-transparent to-coral-50/10"></div>
@@ -208,23 +208,23 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
         <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-ocean-300/15 to-ocean-400/8 rounded-full blur-3xl animate-float"></div>
         <div className="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-tr from-coral-200/12 to-coral-300/8 rounded-full blur-3xl animate-float" style={{animationDelay: '3s'}}></div>
         
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-24">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16 lg:py-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center">
             <AnimatedSection className="space-y-10" animation="fadeLeft">
               <div className="inline-flex items-center bg-gradient-to-r from-ocean-100 to-ocean-50 text-ocean-800 px-6 py-3 rounded-full text-sm font-semibold shadow-soft border border-ocean-200/50">
                 <Star className="w-4 h-4 mr-2" />
                 {t.home.hero.expertise}
               </div>
               
-              <h1 className="text-6xl md:text-7xl font-bold leading-tight text-ocean-800 tracking-tight -mt-10">
+              <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-ocean-800 tracking-tight">
                 {t.home.hero.title}
               </h1>
               
-              <p className="text-xl md:text-2xl text-ocean-700 leading-relaxed max-w-2xl font-light">
+              <p className="text-lg sm:text-xl lg:text-2xl text-ocean-700 leading-relaxed max-w-2xl font-light">
                 {t.home.hero.subtitle}
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-6 pt-4">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 pt-4">
                 <AnimatedButton
                   variant="primary"
                   size="lg"
@@ -245,13 +245,13 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
               </div>
               
               {/* Indicateurs de confiance */}
-              <AnimatedSection className="flex items-center space-x-12 pt-8" delay={300}>
+              <AnimatedSection className="flex flex-col xs:flex-row items-center space-y-4 xs:space-y-0 xs:space-x-6 sm:space-x-8 lg:space-x-12 pt-8" delay={300}>
                 {stats.map((stat, index) => (
                   <div key={index} className="text-center group">
-                    <div className="text-3xl md:text-4xl font-bold text-ocean-800 group-hover:text-ocean-600 transition-colors duration-300">
+                    <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-ocean-800 group-hover:text-ocean-600 transition-colors duration-300">
                       {formatNumber(stat.number)}{stat.suffix || '+'}
                     </div>
-                    <div className="text-sm text-ocean-600 font-medium mt-1">{stat.label}</div>
+                    <div className="text-xs sm:text-sm text-ocean-600 font-medium mt-1">{stat.label}</div>
                   </div>
                 ))}
               </AnimatedSection>
@@ -260,9 +260,9 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
             <AnimatedSection className="relative" animation="fadeRight" delay={200}>
               <div className="relative z-10 group">
                 <img 
-                  src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                  src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600"
                   alt="Consultation professionnelle" 
-                  className="rounded-4xl shadow-large group-hover:shadow-xl transition-all duration-500 transform group-hover:scale-105 image-hover"
+                  className="w-full h-64 sm:h-80 lg:h-96 xl:h-[600px] object-cover rounded-2xl sm:rounded-3xl lg:rounded-4xl shadow-large group-hover:shadow-xl transition-all duration-500 transform group-hover:scale-105"
                 />
                 
                 {/* Decorative elements */}
@@ -270,14 +270,14 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
                 <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-tr from-coral-400 to-coral-600 rounded-4xl opacity-15 blur-xl"></div>
                 
                 {/* Badge professionnel */}
-                <AnimatedCard className="absolute -bottom-10 -left-10 bg-white/95 backdrop-blur-xl p-8 border border-secondary-100">
+                <AnimatedCard className="absolute -bottom-6 sm:-bottom-8 lg:-bottom-10 -left-4 sm:-left-6 lg:-left-10 bg-white/95 backdrop-blur-xl p-4 sm:p-6 lg:p-8 border border-secondary-100">
                   <div className="flex items-center space-x-4">
-                    <div className="w-16 h-16 bg-gradient-to-br from-ocean-600 to-ocean-700 rounded-2xl flex items-center justify-center shadow-medium">
-                      <Award className="w-6 h-6 text-white" />
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-ocean-600 to-ocean-700 rounded-xl sm:rounded-2xl flex items-center justify-center shadow-medium">
+                      <Award className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-white" />
                     </div>
                     <div>
-                      <p className="font-bold text-ocean-800 text-lg">{t.home.hero.name}</p>
-                      <p className="text-sm text-ocean-600 font-medium">{t.home.hero.jobTitle}</p>
+                      <p className="font-bold text-ocean-800 text-sm sm:text-base lg:text-lg">{t.home.hero.name}</p>
+                      <p className="text-xs sm:text-sm text-ocean-600 font-medium">{t.home.hero.jobTitle}</p>
                     </div>
                   </div>
                 </AnimatedCard>
@@ -285,10 +285,10 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
               
               {/* Citation inspirante */}
               <AnimatedSection className="mt-16 text-center" delay={400}>
-                <blockquote className="text-lg md:text-xl text-ocean-700 italic leading-relaxed max-w-2xl mx-auto">
+                <blockquote className="text-base sm:text-lg lg:text-xl text-ocean-700 italic leading-relaxed max-w-2xl mx-auto">
                   {t.home.hero.quote}
                 </blockquote>
-                <cite className="block mt-4 text-sm text-ocean-500 font-medium">
+                <cite className="block mt-4 text-xs sm:text-sm text-ocean-500 font-medium">
                   {t.home.hero.author}
                 </cite>
               </AnimatedSection>
@@ -298,27 +298,27 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-gradient-to-b from-white to-ocean-50/40">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-white to-ocean-50/40">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-ocean-800 mb-8 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-ocean-800 mb-6 sm:mb-8 tracking-tight">
               {t.home.features.title}
             </h2>
-            <p className="text-lg md:text-xl text-ocean-600 max-w-4xl mx-auto leading-relaxed font-light">
+            <p className="text-base sm:text-lg lg:text-xl text-ocean-600 max-w-4xl mx-auto leading-relaxed font-light">
               {t.home.features.subtitle}
             </p>
           </AnimatedSection>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-16">
             {values.map((value, index) => (
               <AnimatedSection key={index} className="text-center" delay={index * 100}>
-                <AnimatedCard className="text-center p-8 card-hover h-full flex flex-col">
-                <div className="w-24 h-24 bg-gradient-to-br from-ocean-50 to-ocean-100 rounded-3xl flex items-center justify-center mx-auto mb-10 group-hover:from-ocean-100 group-hover:to-ocean-200 transition-all duration-500 shadow-soft group-hover:shadow-medium">
+                <AnimatedCard className="text-center p-6 sm:p-8 card-hover h-full flex flex-col">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-gradient-to-br from-ocean-50 to-ocean-100 rounded-2xl sm:rounded-3xl flex items-center justify-center mx-auto mb-6 sm:mb-8 lg:mb-10 group-hover:from-ocean-100 group-hover:to-ocean-200 transition-all duration-500 shadow-soft group-hover:shadow-medium">
                   {value.icon}
                 </div>
                 <div className="flex-1 flex flex-col justify-between">
-                  <h3 className="text-2xl md:text-3xl font-bold text-ocean-800 mb-6 group-hover:text-ocean-600 transition-colors duration-300">{value.title}</h3>
-                  <p className="text-ocean-600 leading-relaxed text-lg font-light">{value.description}</p>
+                  <h3 className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold text-ocean-800 mb-4 sm:mb-6 group-hover:text-ocean-600 transition-colors duration-300">{value.title}</h3>
+                  <p className="text-ocean-600 leading-relaxed text-sm sm:text-base lg:text-lg font-light">{value.description}</p>
                 </div>
                 </AnimatedCard>
               </AnimatedSection>
@@ -330,41 +330,42 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
 
 
       {/* Services Section */}
-      <section className="py-16 bg-gradient-to-b from-ocean-50/30 to-white">
+      <section className="py-12 sm:py-16 bg-gradient-to-b from-ocean-50/30 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-bold text-ocean-800 mb-6">
+          <AnimatedSection className="text-center mb-10 sm:mb-14">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-ocean-800 mb-4 sm:mb-6">
               {t.home.servicesSection.title}
             </h2>
-            <p className="text-lg text-ocean-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg text-ocean-600 max-w-3xl mx-auto leading-relaxed">
               {t.home.servicesSection.subtitle}
             </p>
           </AnimatedSection>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {services.map((service, index) => (
               <AnimatedSection key={index} delay={index * 100}>
                 <AnimatedCard className="overflow-hidden group card-hover h-full flex flex-col">
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-32 sm:h-40 lg:h-48 overflow-hidden">
                   <img 
                     src={service.image} 
                     alt={service.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 image-hover"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
                   />
                   <div className="absolute top-4 right-4">
-                    <span className="bg-ocean-600 text-white px-3 py-1 rounded-full text-xs font-medium">
+                    <span className="bg-ocean-600 text-white px-2 py-1 sm:px-3 rounded-full text-xs font-medium">
                       {service.badge}
                     </span>
                   </div>
                 </div>
                 
-                <div className="p-8 flex-1 flex flex-col">
-                  <h3 className="text-xl font-bold text-ocean-800 mb-3">{service.title}</h3>
-                  <p className="text-ocean-600 mb-6 leading-relaxed">{service.description}</p>
+                <div className="p-4 sm:p-6 lg:p-8 flex-1 flex flex-col">
+                  <h3 className="text-lg sm:text-xl font-bold text-ocean-800 mb-3">{service.title}</h3>
+                  <p className="text-sm sm:text-base text-ocean-600 mb-4 sm:mb-6 leading-relaxed">{service.description}</p>
                   
-                  <div className="space-y-2 mb-6 flex-1">
+                  <div className="space-y-2 mb-4 sm:mb-6 flex-1">
                     {service.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center text-sm text-ocean-600">
+                      <div key={featureIndex} className="flex items-center text-xs sm:text-sm text-ocean-600">
                         <CheckCircle className="w-4 h-4 text-ocean-600 mr-2" />
                         {feature}
                       </div>
@@ -372,10 +373,10 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
                   </div>
                   
                   <div className="flex items-center justify-between mt-auto">
-                    <span className="text-ocean-600 font-medium">{t.home.servicesSection?.onQuote || 'Sur devis'}</span>
+                    <span className="text-sm sm:text-base text-ocean-600 font-medium">{t.home.servicesSection?.onQuote || 'Sur devis'}</span>
                     <button 
                       onClick={() => handleNavigation(getServicePage(service.title))}
-                      className="text-ocean-600 hover:text-ocean-700 font-medium text-sm flex items-center transition-all duration-200 hover:translate-x-1"
+                      className="text-ocean-600 hover:text-ocean-700 font-medium text-xs sm:text-sm flex items-center transition-all duration-200 hover:translate-x-1 min-h-10"
                     >
                       {t.home.servicesSection?.learnMore || 'En savoir plus'}
                       <ArrowRight className="ml-1 w-4 h-4" />
@@ -387,7 +388,7 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
             ))}
           </div>
           
-          <AnimatedSection className="text-center mt-12">
+          <AnimatedSection className="text-center mt-8 sm:mt-12">
             <AnimatedButton
               variant="primary"
               size="lg"
@@ -400,38 +401,40 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
       </section>
 
       {/* Process Section */}
-      <section className="py-16 bg-white">
+      <section className="py-12 sm:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-bold text-ocean-800 mb-6">
+          <div className="text-center mb-10 sm:mb-14">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-ocean-800 mb-4 sm:mb-6">
               {t.home.process.title}
             </h2>
-            <p className="text-lg text-ocean-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-ocean-600 max-w-3xl mx-auto">
               {t.home.process.subtitle}
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {processSteps.map((step, index) => (
               <div key={index} className="text-center">
-                <div className="relative mb-8">
-                  <div className="w-20 h-20 bg-ocean-600 text-white rounded-xl flex items-center justify-center mx-auto text-2xl font-bold shadow-lg">
+                <div className="relative mb-6 sm:mb-8">
+                  <div className="w-16 h-16 sm:w-18 sm:h-18 lg:w-20 lg:h-20 bg-ocean-600 text-white rounded-xl flex items-center justify-center mx-auto text-lg sm:text-xl lg:text-2xl font-bold shadow-lg">
                     {step.step}
                   </div>
-                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-ocean-500 rounded-full flex items-center justify-center">
-                    {step.icon}
+                  <div className="absolute -top-1 -right-1 sm:-top-2 sm:-right-2 w-6 h-6 sm:w-8 sm:h-8 bg-ocean-500 rounded-full flex items-center justify-center">
+                    <div className="w-3 h-3 sm:w-4 sm:h-4 lg:w-6 lg:h-6 text-white">
+                      {step.icon}
+                    </div>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-ocean-800 mb-4">{step.title}</h3>
-                <p className="text-ocean-600 leading-relaxed">{step.description}</p>
+                <h3 className="text-lg sm:text-xl font-bold text-ocean-800 mb-3 sm:mb-4">{step.title}</h3>
+                <p className="text-sm sm:text-base text-ocean-600 leading-relaxed">{step.description}</p>
               </div>
             ))}
           </div>
           
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-12">
             <button 
               onClick={() => handleNavigation('about')}
-              className="border-2 border-ocean-600 text-ocean-600 px-8 py-4 rounded-lg font-medium hover:bg-ocean-50 transition-colors duration-300 cursor-pointer"
+              className="border-2 border-ocean-600 text-ocean-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-medium hover:bg-ocean-50 transition-colors duration-300 cursor-pointer min-h-12"
             >
               {t.home.process.learnMoreButton}
             </button>
@@ -440,30 +443,30 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 bg-gradient-to-b from-ocean-50/20 to-ocean-100/30">
+      <section className="py-12 sm:py-16 bg-gradient-to-b from-ocean-50/20 to-ocean-100/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-bold text-ocean-800 mb-6">
+          <div className="text-center mb-10 sm:mb-14">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-ocean-800 mb-4 sm:mb-6">
               {t.home.testimonials.title}
             </h2>
-            <p className="text-lg text-ocean-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-ocean-600 max-w-3xl mx-auto">
               {t.home.testimonials.subtitle}
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 group border border-ocean-100 hover:border-ocean-200">
-                <div className="mb-6">
-                  <Quote className="w-8 h-8 text-ocean-200 mb-4" />
-                  <p className="text-ocean-700 leading-relaxed text-lg mb-6 italic">"{testimonial.content}"</p>
+              <div key={index} className="bg-white p-6 sm:p-8 rounded-2xl sm:rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 group border border-ocean-100 hover:border-ocean-200">
+                <div className="mb-4 sm:mb-6">
+                  <Quote className="w-6 h-6 sm:w-8 sm:h-8 text-ocean-200 mb-3 sm:mb-4" />
+                  <p className="text-ocean-700 leading-relaxed text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 italic">"{testimonial.content}"</p>
                 </div>
                 
                 <div className="flex items-center justify-between">
-                  <h4 className="font-bold text-ocean-800 text-lg">{testimonial.name}</h4>
+                  <h4 className="font-bold text-ocean-800 text-base sm:text-lg">{testimonial.name}</h4>
                   <div className="flex items-center">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-coral-400 fill-current" />
+                    <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 text-coral-400 fill-current" />
                   ))}
                   </div>
                 </div>
@@ -474,45 +477,45 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
       </section>
 
       {/* Contact CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-12 sm:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-ocean-50 to-ocean-100 rounded-3xl p-12 text-center border border-ocean-200/50">
-            <h2 className="text-3xl md:text-4xl font-bold text-ocean-800 mb-8">
+          <div className="bg-gradient-to-r from-ocean-50 to-ocean-100 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 text-center border border-ocean-200/50">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-ocean-800 mb-6 sm:mb-8">
               {t.contactCTA?.title || 'Prêt à transformer votre organisation ?'}
             </h2>
-            <p className="text-lg text-ocean-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg text-ocean-600 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
               {t.contactCTA?.subtitle || 'Contactez-nous dès aujourd\'hui pour un diagnostic gratuit et découvrez comment notre expertise peut vous accompagner vers l\'excellence organisationnelle.'}
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-6 sm:mb-8">
               <button 
                 onClick={() => handleNavigation('contact')}
-                className="bg-ocean-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-ocean-700 transition-colors duration-300 flex items-center space-x-2"
+                className="w-full sm:w-auto bg-ocean-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-medium hover:bg-ocean-700 transition-colors duration-300 flex items-center justify-center space-x-2 min-h-12"
               >
                 <Phone className="w-5 h-5" />
                 <span>{t.contactCTA?.callButton || 'Appeler maintenant'}</span>
               </button>
               <button 
                 onClick={() => handleNavigation('contact')}
-                className="border-2 border-ocean-600 text-ocean-600 px-8 py-4 rounded-lg font-medium hover:bg-ocean-50 transition-colors duration-300 flex items-center space-x-2"
+                className="w-full sm:w-auto border-2 border-ocean-600 text-ocean-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-medium hover:bg-ocean-50 transition-colors duration-300 flex items-center justify-center space-x-2 min-h-12"
               >
                 <Mail className="w-5 h-5" />
                 <span>{t.contactCTA?.messageButton || 'Envoyer un message'}</span>
               </button>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
+            <div className="flex flex-col xs:flex-row gap-4 sm:gap-6 lg:gap-8 justify-center items-center">
               <div className="flex items-center space-x-2 text-ocean-600">
                 <CheckCircle className="w-5 h-5 text-ocean-500" />
-                <span className="text-sm font-medium">{t.contactCTA?.response48h || 'Réponse sous 48h'}</span>
+                <span className="text-xs sm:text-sm font-medium">{t.contactCTA?.response48h || 'Réponse sous 48h'}</span>
               </div>
               <div className="flex items-center space-x-2 text-ocean-600">
                 <CheckCircle className="w-5 h-5 text-ocean-500" />
-                <span className="text-sm font-medium">{t.contactCTA?.freeDiagnostic || 'Diagnostic gratuit'}</span>
+                <span className="text-xs sm:text-sm font-medium">{t.contactCTA?.freeDiagnostic || 'Diagnostic gratuit'}</span>
               </div>
               <div className="flex items-center space-x-2 text-ocean-600">
                 <CheckCircle className="w-5 h-5 text-ocean-500" />
-                <span className="text-sm font-medium">{t.contactCTA?.personalizedQuote || 'Devis personnalisé'}</span>
+                <span className="text-xs sm:text-sm font-medium">{t.contactCTA?.personalizedQuote || 'Devis personnalisé'}</span>
               </div>
             </div>
           </div>
