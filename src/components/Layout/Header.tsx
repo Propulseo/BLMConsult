@@ -169,13 +169,12 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
           </nav>
 
           {/* Language Selector - Far Right */}
-          <div className="hidden lg:flex items-center ml-4">
+          <div className="hidden lg:flex items-center space-x-4">
             <a 
               href="https://www.linkedin.com/in/lylia-mokrani-06385439/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-ocean-100 transition-colors duration-300 mr-4 p-2 rounded-lg hover:bg-ocean-600/70"
-              className="text-white hover:text-ocean-100 transition-colors duration-200 mr-4 p-2 rounded-lg hover:bg-ocean-600/30"
+              className="text-white hover:text-ocean-100 transition-colors duration-200 p-2 rounded-lg hover:bg-ocean-600/30"
               aria-label="LinkedIn Lylia Mokrani"
             >
               <Linkedin className="w-5 h-5" />
