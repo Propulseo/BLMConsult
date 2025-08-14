@@ -34,11 +34,11 @@ const AnimatedButton: React.FC<AnimatedButtonProps> = ({
   const getSizeClasses = () => {
     switch (size) {
       case 'sm':
-        return 'px-4 py-2 text-sm';
+        return 'px-3 sm:px-4 py-2 text-xs sm:text-sm min-h-8';
       case 'lg':
-        return 'px-8 py-4 text-lg';
+        return 'px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg min-h-12';
       default:
-        return 'px-6 py-3 text-base';
+        return 'px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base min-h-10';
     }
   };
 

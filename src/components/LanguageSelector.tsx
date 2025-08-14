@@ -43,27 +43,27 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
       <div className={`relative ${className}`} ref={dropdownRef}>
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center space-x-2 px-3 py-2 text-sm font-medium text-white hover:text-ocean-100 hover:bg-ocean-600/70 rounded-lg transition-all duration-200 border border-ocean-500"
+          className="flex items-center space-x-2 px-2 sm:px-3 py-2 text-xs sm:text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors duration-200 disabled:opacity-50 min-h-10"
           aria-label={t.nav.languageSelector}
         >
-          <span className="font-semibold text-white">{currentLanguage.toUpperCase()}</span>
-          <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+          <span className="font-medium text-xs sm:text-sm">{currentLangConfig?.flag}</span>
+          <ChevronDown className={`w-3 h-3 sm:w-4 sm:h-4 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
         </button>
 
         {isOpen && (
-          <div className="absolute right-0 top-full mt-2 bg-white border border-ocean-200 rounded-lg shadow-xl py-2 z-50 min-w-[140px]">
+          <div className="absolute right-0 top-full mt-2 bg-white border border-gray-200 rounded-lg shadow-lg py-2 z-50 min-w-[180px] sm:min-w-[200px]">
             {SUPPORTED_LANGUAGES.map((language) => (
               <button
                 key={language.code}
                 onClick={() => handleLanguageChange(language.code)}
-                className={`w-full flex items-center justify-between px-4 py-3 text-sm hover:bg-gray-50 transition-colors duration-200 ${
+                className={`w-full flex items-center space-x-2 sm:space-x-3 px-3 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm hover:bg-gray-50 transition-colors duration-200 min-h-8 ${
                   currentLanguage === language.code ? 'bg-ocean-50 text-ocean-600' : 'text-gray-700'
                 }`}
               >
                 <span className="font-medium">{language.nativeName}</span>
-                <span className="text-xs text-gray-500 font-semibold">{language.code.toUpperCase()}</span>
+                <span className="text-xs text-gray-500 font-semibold">{language.flag}</span>
               </button>
-            ))}
+                  <span className="text-xs text-gray-500 hidden sm:inline">{language.flag}</span>
           </div>
         )}
       </div>
@@ -77,7 +77,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
         <select
           value={currentLanguage}
           onChange={(e) => handleLanguageChange(e.target.value)}
-          className="bg-transparent border-none text-gray-600 focus:outline-none focus:ring-0 disabled:opacity-50"
+          className="bg-transparent border-none text-gray-600 focus:outline-none focus:ring-0 disabled:opacity-50 text-sm min-h-8"
           aria-label={t.nav.languageSelector}
         >
           {SUPPORTED_LANGUAGES.map((language) => (

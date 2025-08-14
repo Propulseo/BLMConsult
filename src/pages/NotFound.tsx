@@ -75,29 +75,29 @@ const NotFound: React.FC<NotFoundProps> = ({ setCurrentPage }) => {
         <div className="text-center mb-16">
           {/* 404 Number */}
           <div className="mb-8">
-            <h1 className="text-9xl md:text-[12rem] font-bold text-ocean-200 leading-none select-none">
+            <h1 className="text-6xl xs:text-7xl sm:text-8xl md:text-9xl lg:text-[12rem] font-bold text-ocean-200 leading-none select-none">
               404
             </h1>
-            <div className="relative -mt-8">
-              <div className="w-24 h-24 bg-ocean-600 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
-                <Search className="w-12 h-12 text-white" />
+            <div className="relative -mt-4 sm:-mt-6 lg:-mt-8">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-ocean-600 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
+                <Search className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 text-white" />
               </div>
             </div>
           </div>
 
           {/* Error Message */}
           <div className="mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-ocean-800 mb-6">
+            <h2 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-ocean-800 mb-4 sm:mb-6">
               Page introuvable
             </h2>
-            <p className="text-xl text-ocean-600 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg lg:text-xl text-ocean-600 max-w-2xl mx-auto leading-relaxed">
               Désolé, la page que vous recherchez n'existe pas ou a été déplacée. 
               Mais ne vous inquiétez pas, je peux vous aider à trouver ce que vous cherchez !
             </p>
           </div>
 
           {/* Search Box */}
-          <div className="mb-16">
+          <div className="mb-12 sm:mb-16">
             <form onSubmit={handleSearch} className="max-w-md mx-auto">
               <div className="relative">
                 <input
@@ -105,12 +105,12 @@ const NotFound: React.FC<NotFoundProps> = ({ setCurrentPage }) => {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Rechercher sur le site..."
-                  className="w-full px-6 py-4 pl-12 text-lg border-2 border-ocean-200 rounded-2xl focus:border-ocean-500 focus:outline-none focus:ring-4 focus:ring-ocean-100 transition-all duration-300"
+                  className="w-full px-4 sm:px-6 py-3 sm:py-4 pl-10 sm:pl-12 text-base sm:text-lg border-2 border-ocean-200 rounded-2xl focus:border-ocean-500 focus:outline-none focus:ring-4 focus:ring-ocean-100 transition-all duration-300 min-h-12"
                 />
-                <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-ocean-400" />
+                <Search className="absolute left-3 sm:left-4 top-1/2 transform -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 text-ocean-400" />
                 <button
                   type="submit"
-                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-ocean-600 text-white px-6 py-2 rounded-xl hover:bg-ocean-700 transition-colors duration-300 flex items-center"
+                  className="absolute right-1 sm:right-2 top-1/2 transform -translate-y-1/2 bg-ocean-600 text-white px-4 sm:px-6 py-2 rounded-xl hover:bg-ocean-700 transition-colors duration-300 flex items-center min-h-8"
                 >
                   <ArrowRight className="w-4 h-4" />
                 </button>
@@ -121,27 +121,27 @@ const NotFound: React.FC<NotFoundProps> = ({ setCurrentPage }) => {
 
         {/* Quick Navigation Links */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-ocean-800 text-center mb-8">
+          <h3 className="text-xl sm:text-2xl font-bold text-ocean-800 text-center mb-6 sm:mb-8">
             Où souhaitez-vous aller ?
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {quickLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => handleNavigation(link.id)}
-                className="bg-white p-6 rounded-2xl shadow-soft hover:shadow-medium transition-all duration-300 group text-left border border-ocean-100 hover:border-ocean-200"
+                className="bg-white p-4 sm:p-6 rounded-2xl shadow-soft hover:shadow-medium transition-all duration-300 group text-left border border-ocean-100 hover:border-ocean-200 min-h-20"
               >
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-ocean-50 rounded-xl flex items-center justify-center group-hover:bg-ocean-100 transition-colors duration-300">
+                <div className="flex items-start space-x-3 sm:space-x-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-ocean-50 rounded-xl flex items-center justify-center group-hover:bg-ocean-100 transition-colors duration-300 flex-shrink-0">
                     {link.icon}
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-lg font-bold text-ocean-800 mb-1 group-hover:text-ocean-600 transition-colors">
+                    <h4 className="text-base sm:text-lg font-bold text-ocean-800 mb-1 group-hover:text-ocean-600 transition-colors">
                       {link.label}
                     </h4>
-                    <p className="text-sm text-ocean-600">{link.description}</p>
+                    <p className="text-xs sm:text-sm text-ocean-600">{link.description}</p>
                   </div>
-                  <ArrowRight className="w-5 h-5 text-ocean-400 group-hover:text-ocean-600 group-hover:translate-x-1 transition-all duration-300" />
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-ocean-400 group-hover:text-ocean-600 group-hover:translate-x-1 transition-all duration-300 flex-shrink-0" />
                 </div>
               </button>
             ))}
@@ -149,16 +149,16 @@ const NotFound: React.FC<NotFoundProps> = ({ setCurrentPage }) => {
         </div>
 
         {/* Popular Pages */}
-        <div className="mb-16">
-          <h3 className="text-xl font-bold text-ocean-800 text-center mb-6">
+        <div className="mb-12 sm:mb-16">
+          <h3 className="text-lg sm:text-xl font-bold text-ocean-800 text-center mb-4 sm:mb-6">
             Pages populaires
           </h3>
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
             {popularPages.map((page) => (
               <button
                 key={page.id}
                 onClick={() => handleNavigation(page.id)}
-                className="bg-ocean-50 text-ocean-700 px-4 py-2 rounded-full hover:bg-ocean-100 hover:text-ocean-800 transition-all duration-300 text-sm font-medium border border-ocean-200 hover:border-ocean-300"
+                className="bg-ocean-50 text-ocean-700 px-3 sm:px-4 py-2 rounded-full hover:bg-ocean-100 hover:text-ocean-800 transition-all duration-300 text-xs sm:text-sm font-medium border border-ocean-200 hover:border-ocean-300 min-h-8"
               >
                 {page.label}
               </button>
@@ -168,24 +168,24 @@ const NotFound: React.FC<NotFoundProps> = ({ setCurrentPage }) => {
 
         {/* Contact CTA */}
         <div className="text-center">
-          <div className="bg-white/80 backdrop-blur-sm p-8 rounded-3xl shadow-soft border border-ocean-100 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-ocean-800 mb-4">
+          <div className="bg-white/80 backdrop-blur-sm p-6 sm:p-8 rounded-3xl shadow-soft border border-ocean-100 max-w-2xl mx-auto">
+            <h3 className="text-xl sm:text-2xl font-bold text-ocean-800 mb-4">
               Besoin d'aide ?
             </h3>
-            <p className="text-ocean-600 mb-6">
+            <p className="text-sm sm:text-base text-ocean-600 mb-4 sm:mb-6">
               Si vous ne trouvez pas ce que vous cherchez, n'hésitez pas à me contacter directement.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <button
                 onClick={() => handleNavigation('contact')}
-                className="bg-ocean-600 text-white px-6 py-3 rounded-xl font-medium hover:bg-ocean-700 transition-colors duration-300 flex items-center justify-center"
+                className="w-full sm:w-auto bg-ocean-600 text-white px-4 sm:px-6 py-3 rounded-xl font-medium hover:bg-ocean-700 transition-colors duration-300 flex items-center justify-center min-h-12"
               >
                 <Mail className="w-4 h-4 mr-2" />
                 Me contacter
               </button>
               <a
                 href="tel:+33123456789"
-                className="border-2 border-ocean-600 text-ocean-600 px-6 py-3 rounded-xl font-medium hover:bg-ocean-50 transition-colors duration-300 flex items-center justify-center"
+                className="w-full sm:w-auto border-2 border-ocean-600 text-ocean-600 px-4 sm:px-6 py-3 rounded-xl font-medium hover:bg-ocean-50 transition-colors duration-300 flex items-center justify-center min-h-12"
               >
                 <Phone className="w-4 h-4 mr-2" />
                 Appeler

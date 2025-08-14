@@ -143,46 +143,46 @@ const CookieConsent: React.FC<CookieConsentProps> = ({
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 pointer-events-none">
+    <div className="fixed bottom-0 left-0 right-0 z-50 pointer-events-none p-2 sm:p-0">
       <div className="bg-white/95 backdrop-blur-sm shadow-lg border-t border-gray-200 w-full pointer-events-auto">
         {!showDetails ? (
           // Main consent banner
-          <div className="px-6 py-4">
-            <div className="max-w-7xl mx-auto flex items-center justify-between gap-6">
-              <div className="flex items-center space-x-4 flex-1">
-                <div className="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
+          <div className="px-4 sm:px-6 py-3 sm:py-4">
+            <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
+              <div className="flex items-center space-x-3 sm:space-x-4 flex-1 text-center sm:text-left">
+                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
                 <Cookie className="w-6 h-6 text-blue-600" />
               </div>
                 <div className="flex-1">
-                  <p className="text-sm text-gray-700 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
                     <span className="font-semibold">Cookies :</span> Nous utilisons des cookies pour améliorer votre expérience. 
                     <a href="/politique-confidentialite" className="text-blue-600 hover:underline ml-1">En savoir plus</a>
                   </p>
                 </div>
               </div>
               
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-2 sm:space-x-3 w-full sm:w-auto">
                 <button
                   onClick={handleAcceptAll}
-                  className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors duration-300"
+                  className="flex-1 sm:flex-none bg-blue-600 text-white px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-medium hover:bg-blue-700 transition-colors duration-300 min-h-8"
                 >
                   Accepter
                 </button>
                 <button
                   onClick={() => setShowDetails(true)}
-                  className="text-gray-600 hover:text-gray-800 text-sm font-medium transition-colors duration-300"
+                  className="text-gray-600 hover:text-gray-800 text-xs sm:text-sm font-medium transition-colors duration-300 min-h-8 px-2"
                 >
                   Personnaliser
                 </button>
                 <button
                   onClick={handleRejectAll}
-                  className="text-gray-600 hover:text-gray-800 text-sm font-medium transition-colors duration-300"
+                  className="text-gray-600 hover:text-gray-800 text-xs sm:text-sm font-medium transition-colors duration-300 min-h-8 px-2"
                 >
                   Refuser
                 </button>
               <button
                 onClick={() => setIsVisible(false)}
-                  className="text-gray-400 hover:text-gray-600 transition-colors p-1 ml-2"
+                  className="text-gray-400 hover:text-gray-600 transition-colors p-1 ml-1 sm:ml-2 min-h-8 min-w-8 flex items-center justify-center"
                 aria-label="Fermer"
               >
                   <X className="w-4 h-4" />
@@ -192,27 +192,27 @@ const CookieConsent: React.FC<CookieConsentProps> = ({
           </div>
         ) : (
           // Detailed preferences panel
-          <div className="p-6 max-h-96 overflow-y-auto">
+          <div className="p-4 sm:p-6 max-h-80 sm:max-h-96 overflow-y-auto">
             <div className="max-w-7xl mx-auto">
-              <div className="flex items-center justify-between mb-6">
-                <h3 className="text-lg font-bold text-gray-900">
+              <div className="flex items-center justify-between mb-4 sm:mb-6">
+                <h3 className="text-base sm:text-lg font-bold text-gray-900">
                   Paramètres des cookies
                 </h3>
                 <button
                   onClick={() => setShowDetails(false)}
-                  className="text-gray-400 hover:text-gray-600 transition-colors p-1"
+                  className="text-gray-400 hover:text-gray-600 transition-colors p-1 min-h-8 min-w-8 flex items-center justify-center"
                   aria-label="Retour"
                 >
                   <X className="w-5 h-5" />
                 </button>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4 sm:mb-6">
                 {/* Necessary Cookies */}
-                <div className="border border-gray-200 rounded-lg p-4">
+                <div className="border border-gray-200 rounded-lg p-3 sm:p-4">
                   <div className="flex items-center justify-between mb-2">
-                    <h4 className="font-semibold text-gray-900 text-sm">Cookies nécessaires</h4>
-                    <div className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">
+                    <h4 className="font-semibold text-gray-900 text-xs sm:text-sm">Cookies nécessaires</h4>
+                    <div className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium whitespace-nowrap">
                       Toujours actifs
                     </div>
                   </div>
@@ -222,9 +222,9 @@ const CookieConsent: React.FC<CookieConsentProps> = ({
                 </div>
                 
                 {/* Analytics Cookies */}
-                <div className="border border-gray-200 rounded-lg p-4">
+                <div className="border border-gray-200 rounded-lg p-3 sm:p-4">
                   <div className="flex items-center justify-between mb-2">
-                    <h4 className="font-semibold text-gray-900 text-sm">Cookies d'analyse</h4>
+                    <h4 className="font-semibold text-gray-900 text-xs sm:text-sm">Cookies d'analyse</h4>
                     <label className="relative inline-flex items-center cursor-pointer">
                       <input
                         type="checkbox"
@@ -241,9 +241,9 @@ const CookieConsent: React.FC<CookieConsentProps> = ({
                 </div>
                 
                 {/* Marketing Cookies */}
-                <div className="border border-gray-200 rounded-lg p-4">
+                <div className="border border-gray-200 rounded-lg p-3 sm:p-4">
                   <div className="flex items-center justify-between mb-2">
-                    <h4 className="font-semibold text-gray-900 text-sm">Cookies marketing</h4>
+                    <h4 className="font-semibold text-gray-900 text-xs sm:text-sm">Cookies marketing</h4>
                     <label className="relative inline-flex items-center cursor-pointer">
                       <input
                         type="checkbox"
@@ -260,9 +260,9 @@ const CookieConsent: React.FC<CookieConsentProps> = ({
                 </div>
                 
                 {/* Functional Cookies */}
-                <div className="border border-gray-200 rounded-lg p-4">
+                <div className="border border-gray-200 rounded-lg p-3 sm:p-4">
                   <div className="flex items-center justify-between mb-2">
-                    <h4 className="font-semibold text-gray-900 text-sm">Cookies fonctionnels</h4>
+                    <h4 className="font-semibold text-gray-900 text-xs sm:text-sm">Cookies fonctionnels</h4>
                     <label className="relative inline-flex items-center cursor-pointer">
                       <input
                         type="checkbox"
@@ -279,16 +279,16 @@ const CookieConsent: React.FC<CookieConsentProps> = ({
                 </div>
               </div>
               
-              <div className="flex justify-center space-x-4">
+              <div className="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4">
                 <button
                   onClick={handleSavePreferences}
-                  className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors duration-300"
+                  className="w-full sm:w-auto bg-blue-600 text-white px-4 py-2 rounded-lg text-xs sm:text-sm font-medium hover:bg-blue-700 transition-colors duration-300 min-h-8"
                 >
                   Enregistrer
                 </button>
                 <button
                   onClick={handleAcceptAll}
-                  className="border border-blue-600 text-blue-600 px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-50 transition-colors duration-300"
+                  className="w-full sm:w-auto border border-blue-600 text-blue-600 px-4 py-2 rounded-lg text-xs sm:text-sm font-medium hover:bg-blue-50 transition-colors duration-300 min-h-8"
                 >
                   Accepter tout
                 </button>
