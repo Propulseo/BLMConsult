@@ -116,61 +116,62 @@ const About: React.FC = () => {
       />
       
       {/* Hero Section - Design asymétrique */}
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-hidden pt-16 sm:pt-20 lg:pt-0">
         {/* Background géométrique */}
         <div className="absolute inset-0">
           <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-bl from-blue-50 to-transparent"></div>
           <div className="absolute bottom-0 left-0 w-1/3 h-2/3 bg-gradient-to-tr from-blue-100/30 to-transparent"></div>
         </div>
         
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="grid grid-cols-12 gap-8 items-center min-h-[80vh]">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-[60vh] sm:min-h-[70vh] lg:min-h-[80vh]">
             {/* Contenu principal - 7 colonnes */}
-            <div className="col-span-12 lg:col-span-7 space-y-8">
-              <div className="space-y-6">
+            <div className="lg:col-span-7 space-y-6 sm:space-y-8">
+              <div className="space-y-4 sm:space-y-6">
                 <div className="inline-block">
-                  <span className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+                  <span className="bg-blue-600 text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium">
                     {t.about.hero.badge}
                   </span>
                 </div>
                 
-                <h1 className="text-6xl md:text-7xl font-bold leading-tight">
+                <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
                   <span className="text-gray-900">{t.about.hero.title}</span>
                   <br />
                   <span className="text-blue-600">{t.about.hero.subtitle}</span>
                 </h1>
                 
-                <p className="text-2xl text-gray-600 leading-relaxed max-w-2xl">
+                <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-2xl">
                   {t.about.hero.description}
                 </p>
               </div>
               
               {/* Stats en ligne */}
-              <div className="flex items-center space-x-12 pt-8">
+              <div className="flex flex-col xs:flex-row items-center space-y-4 xs:space-y-0 xs:space-x-6 sm:space-x-8 lg:space-x-12 pt-6 sm:pt-8">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-blue-600">15+</div>
-                  <div className="text-sm text-gray-600 font-medium">{t.about.hero.stats.experience}</div>
+                  <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-600">15+</div>
+                  <div className="text-xs sm:text-sm text-gray-600 font-medium">{t.about.hero.stats.experience}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-blue-600">100%</div>
-                  <div className="text-sm text-gray-600 font-medium">{t.about.hero.stats.sessions}</div>
+                  <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-600">100%</div>
+                  <div className="text-xs sm:text-sm text-gray-600 font-medium">{t.about.hero.stats.sessions}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-blue-600">95,6%</div>
-                  <div className="text-sm text-gray-600 font-medium">{t.about.hero.stats.satisfaction}</div>
+                  <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-600">95,6%</div>
+                  <div className="text-xs sm:text-sm text-gray-600 font-medium">{t.about.hero.stats.satisfaction}</div>
                 </div>
               </div>
             </div>
             
             {/* Image - 5 colonnes */}
-            <div className="col-span-12 lg:col-span-5 relative">
+            <div className="lg:col-span-5 relative mt-8 lg:mt-0">
               <div className="relative">
                 {/* Image principale */}
                 <div className="relative z-10">
                   <img 
                     src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600" 
                     alt="Lylia Mokrani - BLM Consult" 
-                    className="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
+                    className="w-full h-64 sm:h-80 lg:h-96 xl:h-[600px] object-cover rounded-2xl sm:rounded-3xl shadow-2xl"
+                    loading="lazy"
                   />
                 </div>
                 
@@ -179,21 +180,21 @@ const About: React.FC = () => {
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-400 rounded-full opacity-15 z-0"></div>
                 
                 {/* Badge flottant */}
-                <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 z-20">
+                <div className="absolute -bottom-6 sm:-bottom-8 -left-4 sm:-left-6 lg:-left-8 bg-white p-4 sm:p-6 rounded-2xl shadow-xl border border-gray-100 z-20">
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
-                      <Award className="w-6 h-6 text-white" />
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-600 rounded-xl flex items-center justify-center">
+                      <Award className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
                     </div>
                     <div>
-                      <p className="font-bold text-gray-900">{t.about.hero.profile.name}</p>
-                      <p className="text-sm text-gray-600">{t.about.hero.profile.role}</p>
+                      <p className="font-bold text-gray-900 text-sm sm:text-base">{t.about.hero.profile.name}</p>
+                      <p className="text-xs sm:text-sm text-gray-600">{t.about.hero.profile.role}</p>
                       <a 
                         href="https://www.linkedin.com/in/lylia-mokrani-06385439/"
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="inline-flex items-center text-blue-600 hover:text-blue-700 text-sm font-medium mt-2 transition-colors duration-300"
+                        className="inline-flex items-center text-blue-600 hover:text-blue-700 text-xs sm:text-sm font-medium mt-1 sm:mt-2 transition-colors duration-300"
                       >
-                        <Linkedin className="w-4 h-4 mr-1" />
+                        <Linkedin className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
                         LinkedIn
                       </a>
                     </div>
@@ -206,37 +207,37 @@ const About: React.FC = () => {
       </section>
 
       {/* Section Profil - Layout en zigzag */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-block mb-6">
-              <span className="bg-blue-600 text-white px-6 py-3 rounded-full text-sm font-semibold">
+          <div className="text-center mb-10 sm:mb-16">
+            <div className="inline-block mb-4 sm:mb-6">
+              <span className="bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full text-xs sm:text-sm font-semibold">
                 {t.about.profile.badge}
               </span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               {t.about.profile.title}
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
               {t.about.profile.subtitle}
             </p>
           </div>
           
           {/* Certifications en grille simple */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
             {certifications.map((cert, index) => (
-              <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
-                <div className="flex items-center justify-center w-16 h-16 bg-blue-50 rounded-xl mb-6 mx-auto">
+              <div key={index} className="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-blue-50 rounded-xl mb-4 sm:mb-6 mx-auto">
                   {cert.icon}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4 text-center">
                   {cert.title}
                 </h3>
-                <p className="text-gray-600 text-center mb-6 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 text-center mb-4 sm:mb-6 leading-relaxed">
                   {cert.description}
                 </p>
                 <div className="text-center">
-                  <span className="inline-flex items-center bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-medium">
+                  <span className="inline-flex items-center bg-green-50 text-green-700 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                     <CheckCircle className="w-4 h-4 mr-2" />
                     {t.about.profile.certified}
                   </span>
@@ -246,31 +247,31 @@ const About: React.FC = () => {
           </div>
 
           {/* Memberships - Layout horizontal différent */}
-          <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-12 text-white">
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+          <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-6 sm:p-8 lg:p-12 text-white">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8">
               <div className="lg:w-1/3">
-                <div className="inline-flex items-center bg-white/20 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                <div className="inline-flex items-center bg-white/20 text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
                   <Award className="w-4 h-4 mr-2" />
                   {t.about.memberships.recognition}
                 </div>
-                <h3 className="text-3xl font-bold mb-4">{t.about.memberships.title}</h3>
-                <p className="text-blue-100 leading-relaxed">
+                <h3 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">{t.about.memberships.title}</h3>
+                <p className="text-sm sm:text-base text-blue-100 leading-relaxed">
                   {t.about.memberships.subtitle}
                 </p>
               </div>
               
               <div className="lg:w-2/3">
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                   {memberships.map((membership, index) => (
-                    <div key={index} className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/20 hover:bg-white/20 transition-colors duration-300">
-                      <div className="flex items-center space-x-4">
-                        <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <Users className="w-5 h-5 text-white" />
+                    <div key={index} className="bg-white/10 backdrop-blur-sm p-3 sm:p-4 rounded-lg border border-white/20 hover:bg-white/20 transition-colors duration-300">
+                      <div className="flex items-center space-x-3 sm:space-x-4">
+                        <div className="w-8 h-8 sm:w-10 sm:h-10 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <Users className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                         </div>
                         <div className="flex-1">
-                          <p className="font-semibold text-white text-base">{membership}</p>
+                          <p className="font-semibold text-white text-sm sm:text-base">{membership}</p>
                         </div>
-                        <div className="inline-flex items-center bg-green-400/20 text-green-100 px-3 py-1 rounded-full text-xs font-medium">
+                        <div className="inline-flex items-center bg-green-400/20 text-green-100 px-2 sm:px-3 py-1 rounded-full text-xs font-medium">
                           <div className="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
                           {t.about.memberships.active}
                         </div>
@@ -278,10 +279,10 @@ const About: React.FC = () => {
                     </div>
                   ))}
                   
-                  <div className="mt-6 p-4 bg-white/10 rounded-lg border border-white/20">
+                  <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-white/10 rounded-lg border border-white/20">
                     <div className="flex items-center justify-center">
                       <CheckCircle className="w-5 h-5 mr-2 text-blue-200" />
-                      <span className="font-semibold text-blue-100">{t.about.memberships.supervision}</span>
+                      <span className="font-semibold text-blue-100 text-sm sm:text-base text-center">{t.about.memberships.supervision}</span>
                     </div>
                   </div>
                 </div>
@@ -292,27 +293,27 @@ const About: React.FC = () => {
       </section>
 
       {/* Domaines d'intervention - Layout en grille décalée */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               {t.about.interventions.title}
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
               {t.about.interventions.subtitle}
             </p>
           </div>
           
           {/* Grille simple et claire */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {interventions.map((intervention, index) => (
-              <div key={index} className="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
-                <div className="space-y-4">
-                  <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
+              <div key={index} className="bg-gray-50 p-6 sm:p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
+                <div className="space-y-3 sm:space-y-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-600 rounded-xl flex items-center justify-center">
                     {intervention.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900">{intervention.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{intervention.description}</p>
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-900">{intervention.title}</h3>
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{intervention.description}</p>
                 </div>
               </div>
             ))}
@@ -321,13 +322,13 @@ const About: React.FC = () => {
       </section>
 
       {/* Valeurs - Design en timeline */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-blue-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               {t.about.values.title}
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
               {t.about.values.subtitle}
             </p>
           </div>
@@ -337,9 +338,9 @@ const About: React.FC = () => {
             {/* Ligne centrale */}
             <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-blue-200 hidden lg:block"></div>
             
-            <div className="space-y-16">
+            <div className="space-y-12 sm:space-y-16">
               {valeurs.map((valeur, index) => (
-                <div key={index} className={`relative grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ${
+                <div key={index} className={`relative grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-center ${
                   index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
                 }`}>
                   {/* Point sur la timeline */}
@@ -347,21 +348,21 @@ const About: React.FC = () => {
                   
                   {/* Contenu */}
                   <div className={`${index % 2 === 1 ? 'lg:col-start-2 lg:text-right' : ''}`}>
-                    <div className={`bg-white p-8 rounded-2xl shadow-lg ${index % 2 === 1 ? 'lg:ml-8' : 'lg:mr-8'}`}>
-                      <div className={`flex items-center mb-6 ${index % 2 === 1 ? 'lg:justify-end' : ''}`}>
-                        <div className={`w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
+                    <div className={`bg-white p-6 sm:p-8 rounded-2xl shadow-lg ${index % 2 === 1 ? 'lg:ml-8' : 'lg:mr-8'}`}>
+                      <div className={`flex items-center mb-4 sm:mb-6 ${index % 2 === 1 ? 'lg:justify-end' : ''}`}>
+                        <div className={`w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-blue-50 rounded-2xl flex items-center justify-center ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
                           {valeur.icon}
                         </div>
-                        <h3 className={`text-2xl font-bold text-gray-900 ${index % 2 === 1 ? 'mr-4 lg:order-1' : 'ml-4'}`}>
+                        <h3 className={`text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 ${index % 2 === 1 ? 'mr-3 sm:mr-4 lg:order-1' : 'ml-3 sm:ml-4'}`}>
                           {valeur.title}
                         </h3>
                       </div>
-                      <div className="space-y-3">
+                      <div className="space-y-2 sm:space-y-3">
                         {valeur.items.map((item, itemIndex) => (
                           <div key={itemIndex} className={`flex items-start ${index % 2 === 1 ? 'lg:justify-end' : ''}`}>
                             <div className={`flex items-start ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
-                              <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mx-3 flex-shrink-0"></div>
-                              <span className={`text-gray-700 ${index % 2 === 1 ? 'lg:text-right' : ''}`}>{item}</span>
+                              <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mx-2 sm:mx-3 flex-shrink-0"></div>
+                              <span className={`text-sm sm:text-base text-gray-700 ${index % 2 === 1 ? 'lg:text-right' : ''}`}>{item}</span>
                             </div>
                           </div>
                         ))}
@@ -371,7 +372,7 @@ const About: React.FC = () => {
                   
                   {/* Espace visuel */}
                   <div className={`${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
-                    <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl opacity-50"></div>
+                    <div className="h-32 sm:h-40 lg:h-48 bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl opacity-50"></div>
                   </div>
                 </div>
               ))}
@@ -381,37 +382,37 @@ const About: React.FC = () => {
       </section>
 
       {/* Engagements - Design en split screen */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               {t.about.commitments.title}
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
               {t.about.commitments.subtitle}
             </p>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-2xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
             {engagements.map((engagement, index) => (
-              <div key={index} className={`p-12 ${index === 0 ? 'bg-blue-600 text-white' : 'bg-gray-900 text-white'}`}>
-                <div className="space-y-8">
-                  <div className="flex items-center space-x-4">
+              <div key={index} className={`p-6 sm:p-8 lg:p-12 ${index === 0 ? 'bg-blue-600 text-white' : 'bg-gray-900 text-white'}`}>
+                <div className="space-y-6 sm:space-y-8">
+                  <div className="flex items-center space-x-3 sm:space-x-4">
                     <div className={`w-16 h-16 rounded-2xl flex items-center justify-center ${
                       index === 0 ? 'bg-white/20' : 'bg-blue-600'
                     }`}>
                       <FileText className="w-8 h-8 text-white" />
                     </div>
-                    <h3 className="text-3xl font-bold">{engagement.title}</h3>
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold">{engagement.title}</h3>
                   </div>
                   
-                  <div className="space-y-4">
+                  <div className="space-y-3 sm:space-y-4">
                     {engagement.items.map((item, itemIndex) => (
                       <div key={itemIndex} className="flex items-start space-x-3">
                         <CheckCircle className={`w-5 h-5 mt-1 flex-shrink-0 ${
                           index === 0 ? 'text-blue-200' : 'text-blue-400'
                         }`} />
-                        <span className="text-lg leading-relaxed">{item}</span>
+                        <span className="text-sm sm:text-base lg:text-lg leading-relaxed">{item}</span>
                       </div>
                     ))}
                   </div>
@@ -423,24 +424,24 @@ const About: React.FC = () => {
       </section>
 
       {/* Philosophy Section - Design immersif */}
-      <section className="py-20 bg-gray-100">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-5xl font-bold mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-8 sm:mb-12">
             {t.about.philosophy.title}
           </h2>
           
-          <div className="bg-white rounded-3xl p-12 shadow-xl border border-gray-200">
-            <blockquote className="text-lg md:text-xl leading-relaxed mb-8 italic text-gray-700">
+          <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 shadow-xl border border-gray-200">
+            <blockquote className="text-base sm:text-lg lg:text-xl leading-relaxed mb-6 sm:mb-8 italic text-gray-700">
               "{t.about.philosophy.quote}"
             </blockquote>
             
-            <div className="flex items-center justify-center space-x-6">
-              <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
-                <span className="text-blue-600 font-bold text-2xl">L</span>
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
+                <span className="text-white font-bold text-lg sm:text-2xl">L</span>
               </div>
-              <div className="text-left">
-                <div className="text-xl font-bold text-gray-900">{t.about.philosophy.author}</div>
-                <div className="text-gray-600">{t.about.philosophy.role}</div>
+              <div className="text-center sm:text-left">
+                <div className="text-lg sm:text-xl font-bold text-gray-900">{t.about.philosophy.author}</div>
+                <div className="text-sm sm:text-base text-gray-600">{t.about.philosophy.role}</div>
               </div>
             </div>
           </div>
@@ -448,18 +449,18 @@ const About: React.FC = () => {
       </section>
 
       {/* Travailler avec BLM Consult - Design en cartes flottantes */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               {t.about.advantages.title}
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
               {t.about.advantages.subtitle}
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {[
               {
                 icon: <Award className="w-8 h-8 text-white" />,
@@ -487,12 +488,12 @@ const About: React.FC = () => {
               }
             ].map((advantage, index) => (
               <div key={index} className="group">
-                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 h-full">
-                  <div className={`w-16 h-16 bg-gradient-to-r ${advantage.color} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 h-full">
+                  <div className={`w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-r ${advantage.color} rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300`}>
                     {advantage.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">{advantage.title}</h3>
-                  <p className="text-gray-600 leading-relaxed text-center">{advantage.description}</p>
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4 text-center">{advantage.title}</h3>
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed text-center">{advantage.description}</p>
                 </div>
               </div>
             ))}
