@@ -9,7 +9,6 @@ const CGV: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 lg:pt-16">
           <div className="text-center">
             <FileText className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 text-blue-600 mx-auto mb-4 sm:mb-6" />
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
             <h1 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
               Conditions Générales de Vente
             </h1>
