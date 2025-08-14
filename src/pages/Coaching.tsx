@@ -2,36 +2,16 @@ import React from 'react';
 import { Users, Target, Zap, Heart, CheckCircle, Star, Clock, Award, TrendingUp, RefreshCw, MessageCircle, ArrowRight, User, Building, Lightbulb, Shield } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import SEOHead from '../components/SEOHead';
+import { serviceSchemas, breadcrumbSchema } from '../data/structuredData';
 
 const Coaching: React.FC = () => {
   const { t } = useTranslation();
 
   // SEO optimized structured data for Coaching page
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Coaching Professionnel - BLM Consult",
-    "description": "Coaching professionnel individuel et collectif par Lylia Mokrani. Développement du leadership, compétences transverses et performance d'équipe.",
-    "provider": {
-      "@type": "Person",
-      "name": "Lylia Mokrani",
-      "jobTitle": "Coach professionnelle certifiée CNAM",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "BLM Consult"
-      }
-    },
-    "serviceType": [
-      "Coaching individuel dirigeants",
-      "Coaching collectif équipes",
-      "Développement leadership",
-      "Accompagnement managérial"
-    ],
-    "areaServed": {
-      "@type": "Country",
-      "name": "France"
-    }
-  };
+  const structuredData = [
+    serviceSchemas.coaching,
+    breadcrumbSchema('coaching', 'Coaching Professionnel')
+  ];
 
   const coachingTypes = [
     {

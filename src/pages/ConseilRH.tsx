@@ -2,36 +2,16 @@ import React from 'react';
 import { Target, Shield, Zap, Heart, CheckCircle, Star, Clock, Award, TrendingUp, Users, RefreshCw, MessageCircle, ArrowRight } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import SEOHead from '../components/SEOHead';
+import { serviceSchemas, breadcrumbSchema } from '../data/structuredData';
 
 const ConseilRH: React.FC = () => {
   const { t } = useTranslation();
 
   // SEO optimized structured data for Conseil RH page
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Conseil RH & RPS - BLM Consult",
-    "description": "Services de conseil RH spécialisés : diagnostic RPS, accompagnement du changement, gestion de crise, QVCT. Expertise certifiée par Lylia Mokrani.",
-    "provider": {
-      "@type": "Person",
-      "name": "Lylia Mokrani",
-      "jobTitle": "Consultante RH experte spécialisée RPS",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "BLM Consult"
-      }
-    },
-    "serviceType": [
-      "Diagnostic socio-organisationnel RPS",
-      "Accompagnement du changement organisationnel",
-      "Gestion de crise en entreprise",
-      "QVCT - Qualité de Vie et Conditions de Travail"
-    ],
-    "areaServed": {
-      "@type": "Country",
-      "name": "France"
-    }
-  };
+  const structuredData = [
+    serviceSchemas.conseilRH,
+    breadcrumbSchema('conseil', 'Conseil RH & RPS')
+  ];
 
   const services = [
     {

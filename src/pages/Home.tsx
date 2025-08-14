@@ -5,6 +5,7 @@ import SEOHead from '../components/SEOHead';
 import AnimatedSection from '../components/AnimatedSection';
 import AnimatedButton from '../components/AnimatedButton';
 import AnimatedCard from '../components/AnimatedCard';
+import { organizationSchema, personSchema, faqSchema } from '../data/structuredData';
 
 interface HomeProps {
   setCurrentPage?: (page: string) => void;
@@ -38,42 +39,7 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
   };
 
   // SEO optimized structured data for BLM Consult
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "BLM Consult",
-    "description": "Cabinet conseil RH spécialisé en accompagnement entreprise, formation coaching et développement professionnel. 15+ ans d'expérience.",
-    "url": window.location.origin,
-    "logo": "https://lh3.googleusercontent.com/pw/AP1GczOkB92Fn0-b0Lal_KeOxAh4I0iVqxSsqvyI1nVcU3xA1Xbgu8-nhiTJ6xpLa9CW-6fAngVOJSxdUh2pNxoLDwdPttV3mwt3e1vi-UvaGLsE6dmQkJKhpUAjJGF7JWTe7dc7UC06bDsB6dmWtVFI3yQA=w793-h315-s-no-gm?authuser=0",
-    "founder": {
-      "@type": "Person",
-      "name": "Lylia Mokrani",
-      "jobTitle": "Consultant formateur coach",
-      "description": "Experte en conseil ressources humaines et changement organisationnel"
-    },
-    "serviceType": [
-      "Conseil en ressources humaines",
-      "Formation professionnelle",
-      "Coaching professionnel",
-      "Accompagnement du changement organisationnel",
-      "Médiation professionnelle"
-    ],
-    "areaServed": {
-      "@type": "Country",
-      "name": "France"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer service",
-      "availableLanguage": ["French"]
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "150",
-      "bestRating": "5"
-    }
-  };
+  const structuredData = [organizationSchema, personSchema, faqSchema];
 
   const handleNavigation = (page: string) => {
     if (setCurrentPage) {

@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { Mail, Phone, MapPin, Send, Clock, MessageCircle, Linkedin } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import SEOHead from '../components/SEOHead';
+import { localBusinessSchema, breadcrumbSchema } from '../data/structuredData';
 
 interface ContactProps {
   setCurrentPage?: (page: string) => void;
@@ -11,32 +12,10 @@ const Contact: React.FC<ContactProps> = ({ setCurrentPage }) => {
   const { t } = useTranslation();
 
   // SEO optimized structured data for Contact page
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "ContactPage",
-    "name": "Contact BLM Consult",
-    "description": "Contactez Lylia Mokrani pour vos projets de conseil RH, coaching et formation. Réponse garantie sous 24h, diagnostic gratuit.",
-    "mainEntity": {
-      "@type": "Organization",
-      "name": "BLM Consult",
-      "founder": {
-        "@type": "Person",
-        "name": "Lylia Mokrani",
-        "jobTitle": "Consultante RH experte"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "customer service",
-        "email": "contact@blmconsult.fr",
-        "availableLanguage": "French",
-        "areaServed": "FR"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "France"
-      }
-    }
-  };
+  const structuredData = [
+    localBusinessSchema,
+    breadcrumbSchema('contact', 'Contact')
+  ];
 
   const [formData, setFormData] = useState({
     name: '',

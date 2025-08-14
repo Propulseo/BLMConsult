@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import SEOHead from '../components/SEOHead';
+import { blogSchema, articleSchemas, breadcrumbSchema } from '../data/structuredData';
 
 interface BlogProps {
   setCurrentPage?: (page: string) => void;
@@ -11,28 +12,10 @@ const Blog: React.FC<BlogProps> = ({ setCurrentPage }) => {
   const { t } = useTranslation();
 
   // SEO optimized structured data for Blog page
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "Blog BLM Consult",
-    "description": "Blog conseil RH par Lylia Mokrani : articles sur l'amélioration des conditions de travail, prévention RPS, management et qualité de vie au travail.",
-    "author": {
-      "@type": "Person",
-      "name": "Lylia Mokrani",
-      "jobTitle": "Consultante RH experte et formatrice"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "BLM Consult"
-    },
-    "inLanguage": "fr-FR",
-    "about": [
-      "Conseil en ressources humaines",
-      "Prévention des risques psychosociaux",
-      "Management et leadership",
-      "Qualité de vie au travail"
-    ]
-  };
+  const structuredData = [
+    blogSchema,
+    breadcrumbSchema('blog', 'Blog & Actualités')
+  ];
 
   const categories = useMemo(() => [t.blog.categories.all, t.blog.categories.change, t.blog.categories.management, t.blog.categories.crisis, t.blog.categories.formation, t.blog.categories.mediation, t.blog.categories.coaching], [t]);
 

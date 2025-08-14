@@ -2,34 +2,16 @@ import React, { useMemo } from 'react';
 import { GraduationCap, Target, Users, Shield, CheckCircle, Star, Clock, Mail, BookOpen, Award, Zap, Heart, MessageCircle } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import SEOHead from '../components/SEOHead';
+import { serviceSchemas, breadcrumbSchema } from '../data/structuredData';
 
 const Formations: React.FC = () => {
   const { t } = useTranslation();
 
   // SEO optimized structured data for Formations page
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
-    "name": "Formations BLM Consult",
-    "description": "Formations professionnelles sur mesure par Lylia Mokrani : efficacité professionnelle, santé au travail, prévention RPS. Pédagogie active et accompagnement personnalisé.",
-    "founder": {
-      "@type": "Person",
-      "name": "Lylia Mokrani",
-      "jobTitle": "Formatrice certifiée INRS/CRAMIF"
-    },
-    "courseMode": "Blended",
-    "educationalCredentialAwarded": "Certificat de formation",
-    "teaches": [
-      "Prévention des risques psychosociaux",
-      "Gestion du stress au travail",
-      "Prévention du harcèlement",
-      "Management et communication"
-    ],
-    "areaServed": {
-      "@type": "Country",
-      "name": "France"
-    }
-  };
+  const structuredData = [
+    serviceSchemas.formations,
+    breadcrumbSchema('formations', 'Formations Sur-mesure')
+  ];
 
   const approchePedagogique = useMemo(() => [
     {

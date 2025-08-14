@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTranslation } from '../hooks/useTranslation';
 import { SUPPORTED_LANGUAGES } from '../config/languages';
+import StructuredData from './StructuredData';
+import { organizationSchema, websiteSchema } from '../data/structuredData';
 
 interface SEOHeadProps {
   title?: string;
@@ -27,6 +29,11 @@ const SEOHead: React.FC<SEOHeadProps> = ({
   const pageTitle = title || t.meta.title;
   const pageDescription = description || t.meta.description;
   const pageKeywords = keywords || t.meta.keywords;
+  
+  // Combine default structured data with page-specific data
+  const combinedStructuredData = structuredData 
+    ? [organizationSchema, websiteSchema, structuredData]
+    : [organizationSchema, websiteSchema];
 
   React.useEffect(() => {
     // Update document title
@@ -128,7 +135,9 @@ const SEOHead: React.FC<SEOHeadProps> = ({
 
   }, [pageTitle, pageDescription, pageKeywords, currentLanguage, languageConfig, canonical, ogImage, ogType, structuredData]);
 
-  return null; // This component doesn't render anything visible
+  return (
+    <StructuredData data={combinedStructuredData} />
+  );
 };
 
 export default SEOHead;

@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowRight, CheckCircle, Star, Target, Users, GraduationCap, Handshake, MessageCircle, Shield, Zap, Heart, Clock, Award } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import SEOHead from '../components/SEOHead';
+import { serviceSchemas, breadcrumbSchema } from '../data/structuredData';
 
 interface ServicesProps {
   setCurrentPage: (page: string) => void;
@@ -11,31 +12,12 @@ const Services: React.FC<ServicesProps> = ({ setCurrentPage }) => {
   const { t } = useTranslation();
 
   // SEO optimized structured data for Services page
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Services BLM Consult",
-    "description": "Services professionnels de conseil RH, coaching, formations sur-mesure et médiation par Lylia Mokrani. Accompagnement expert pour transformer votre organisation.",
-    "provider": {
-      "@type": "Person",
-      "name": "Lylia Mokrani",
-      "jobTitle": "Consultante RH experte",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "BLM Consult"
-      }
-    },
-    "serviceType": [
-      "Conseil RH et RPS",
-      "Coaching professionnel",
-      "Formations sur-mesure",
-      "Médiation professionnelle"
-    ],
-    "areaServed": {
-      "@type": "Country",
-      "name": "France"
-    }
-  };
+  const structuredData = [
+    serviceSchemas.conseilRH,
+    serviceSchemas.coaching, 
+    serviceSchemas.formations,
+    breadcrumbSchema('services', 'Nos Services')
+  ];
 
   const handleNavigation = (page: string) => {
     setCurrentPage(page);

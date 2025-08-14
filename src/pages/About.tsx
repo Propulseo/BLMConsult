@@ -2,38 +2,16 @@ import React from 'react';
 import { GraduationCap, Briefcase, Users, Award, Target, Heart, Shield, Zap, CheckCircle, Star, Clock, Lock, FileText, UserCheck, Eye, MessageCircle, Linkedin } from 'lucide-react';
 import { useTranslation } from '../hooks/useTranslation';
 import SEOHead from '../components/SEOHead';
+import { personSchema, breadcrumbSchema } from '../data/structuredData';
 
 const About: React.FC = () => {
   const { t } = useTranslation();
 
   // SEO optimized structured data for About page
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Lylia Mokrani",
-    "jobTitle": t.about.hero.badge,
-    "description": t.about.content,
-    "worksFor": {
-      "@type": "Organization",
-      "name": "BLM Consult",
-      "description": "Cabinet conseil RH spécialisé en accompagnement entreprise"
-    },
-    "hasCredential": [
-      t.about.certifications.rps.title,
-      t.about.certifications.formateur.title,
-      t.about.certifications.coach.title,
-      "Médiateur du travail diplômée"
-    ],
-    "memberOf": [
-      "ANM (Association Nationale des Médiateurs)",
-      "SYME (Syndicat professionnel des médiateurs)",
-      "PREMiS (Association autour des pratiques de médiation en santé)"
-    ],
-    "areaServed": {
-      "@type": "Country",
-      "name": "France"
-    }
-  };
+  const structuredData = [
+    personSchema,
+    breadcrumbSchema('about', 'À Propos')
+  ];
 
   const certifications = [
     {
