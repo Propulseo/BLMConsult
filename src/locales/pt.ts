@@ -814,7 +814,7 @@ export const pt: TranslationKeys = {
           'Gestão do stress e conflitos'
         ],
         duration: '3-6 meses',
-        price: 'A partir de 2 500€',
+        price: 'Sob orçamento',
         badge: 'Individual'
       },
       collectif: {
@@ -834,7 +834,7 @@ export const pt: TranslationKeys = {
           'Sinergia e colaboração'
         ],
         duration: '6-12 meses',
-        price: 'A partir de 4 000€',
+        price: 'Sob orçamento',
         badge: 'Coletivo'
       }
     },

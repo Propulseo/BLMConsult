@@ -812,7 +812,7 @@ export const fr: TranslationKeys = {
           'Gestion du stress et des conflits'
         ],
         duration: '3-6 mois',
-        price: 'À partir de 2 500€',
+        price: 'Sur devis',
         badge: 'Individuel'
       },
       collectif: {
@@ -832,7 +832,7 @@ export const fr: TranslationKeys = {
           'Synergie et collaboration'
         ],
         duration: '6-12 mois',
-        price: 'À partir de 4 000€',
+        price: 'Sur devis',
         badge: 'Collectif'
       }
     },

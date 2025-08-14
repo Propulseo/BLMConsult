@@ -813,7 +813,7 @@ export const en: TranslationKeys = {
           'Managing stress and conflicts'
         ],
         duration: '3-6 months',
-        price: 'From €2,500',
+        price: 'On quote',
         badge: 'Individual'
       },
       collectif: {
@@ -833,7 +833,7 @@ export const en: TranslationKeys = {
           'Synergy and collaboration'
         ],
         duration: '6-12 months',
-        price: 'From €4,000',
+        price: 'On quote',
         badge: 'Team'
       }
     },
