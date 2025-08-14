@@ -839,8 +839,8 @@ export const pt: TranslationKeys = {
       }
     },
     contexte: {
-      title: 'Porque escolhemos o coaching como abordagem',
-      subtitle: 'As evoluções do mundo profissional levaram-nos a desenvolver novas competências e abordagens',
+      title: 'Escolher o coaching como abordagem',
+      subtitle: 'O mundo profissional evolui mais rápido que o humano',
       cycles: {
         title: 'Ciclos de mudança acelerados',
         description: 'As transformações organizacionais aceleram-se, necessitando de adaptação permanente'

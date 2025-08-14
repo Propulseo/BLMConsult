@@ -838,8 +838,8 @@ export const en: TranslationKeys = {
       }
     },
     contexte: {
-      title: 'Why we chose coaching as an approach',
-      subtitle: 'The evolution of the professional world has led us to develop new skills and approaches',
+      title: 'Choosing coaching as an approach',
+      subtitle: 'The professional world evolves faster than humans',
       cycles: {
         title: 'Accelerated change cycles',
         description: 'Organizational transformations are accelerating, requiring permanent adaptation'

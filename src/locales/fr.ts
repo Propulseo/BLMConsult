@@ -837,8 +837,8 @@ export const fr: TranslationKeys = {
       }
     },
     contexte: {
-      title: 'Pourquoi nous avons choisi le coaching comme approche',
-      subtitle: 'Les évolutions du monde professionnel nous ont amenés à développer de nouvelles compétences et approches',
+      title: 'Choisir le coaching comme approche',
+      subtitle: 'Le monde professionnel évolue plus vite que l\'humain',
       cycles: {
         title: 'Cycles de changement accélérés',
         description: 'Les transformations organisationnelles s\'accélèrent, nécessitant une adaptation permanente'
