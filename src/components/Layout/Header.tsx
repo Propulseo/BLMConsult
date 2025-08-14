@@ -113,8 +113,8 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                      onClick={() => handleNavigation('services')}
                       className={`nav-item flex items-center px-5 py-3 text-sm font-semibold rounded-2xl transition-all duration-300 ${
                         currentPage === item.id || currentPage.startsWith('service')
-                          ? 'text-ocean-700 bg-white shadow-inner-soft' 
-                          : 'text-white hover:text-ocean-100 hover:bg-ocean-600/70'
+                          ? 'text-ocean-700 bg-white/90' 
+                          : 'text-white hover:text-ocean-100 hover:bg-ocean-600/50'
                       }`}
                       aria-expanded={servicesDropdown}
                       aria-haspopup="true"
@@ -157,8 +157,8 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                     onClick={() => handleNavigation(item.id)}
                     className={`nav-item px-5 py-3 text-sm font-semibold rounded-2xl transition-all duration-300 ${
                       currentPage === item.id 
-                        ? 'text-ocean-700 bg-white shadow-inner-soft' 
-                        : 'text-white hover:text-ocean-100 hover:bg-ocean-600/70'
+                        ? 'text-ocean-700 bg-white/90'
+                        : 'text-white hover:text-ocean-100 hover:bg-ocean-600/50'
                     }`}
                   >
                     {item.label}
@@ -175,6 +175,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-ocean-100 transition-colors duration-300 mr-4 p-2 rounded-lg hover:bg-ocean-600/70"
+              className="text-white hover:text-ocean-100 transition-colors duration-200 mr-4 p-2 rounded-lg hover:bg-ocean-600/30"
               aria-label="LinkedIn Lylia Mokrani"
             >
               <Linkedin className="w-5 h-5" />
@@ -189,6 +190,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-ocean-100 transition-colors duration-300 p-2 rounded-lg hover:bg-ocean-600/70"
+              className="text-white hover:text-ocean-100 transition-colors duration-200 p-2 rounded-lg hover:bg-ocean-600/30"
               aria-label="LinkedIn Lylia Mokrani"
             >
               <Linkedin className="w-5 h-5" />
@@ -197,6 +199,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-3 text-white hover:text-ocean-100 transition-all duration-300 rounded-2xl hover:bg-ocean-600/70 icon-hover"
+              className="p-3 text-white hover:text-ocean-100 transition-all duration-200 rounded-2xl hover:bg-ocean-600/30"
               aria-expanded={isMenuOpen}
               aria-label="Toggle navigation menu"
             >
@@ -231,6 +234,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                         key={dropItem.id}
                         onClick={() => handleNavigation(dropItem.id)}
                         className="block w-full text-left px-4 py-3 text-sm text-ocean-200 hover:text-white hover:bg-ocean-600/70 rounded-xl transition-all duration-300 hover:translate-x-1"
+                        className="block w-full text-left px-4 py-3 text-sm text-ocean-200 hover:text-white hover:bg-ocean-600/30 rounded-xl transition-all duration-200"
                       >
                         <div className="flex flex-col">
                           <span className="font-medium">{dropItem.label}</span>
