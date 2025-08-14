@@ -43,8 +43,8 @@ export const fr: TranslationKeys = {
     hero: {
       title: 'Transformez votre entreprise avec des solutions expertes', 
       subtitle: 'Nous proposons des services de conseil complets pour aider votre organisation à atteindre l\'excellence et une croissance durable.',
-      cta: 'Prêt à commencer ?',
-      secondaryCta: 'Découvrir notre approche',
+      cta: 'Faites-vous accompagner',
+      secondaryCta: 'Envie d\'en savoir plus ?',
       expertise: 'Des consultants experts • + 15 ans d\'expérience',
       name: 'Lylia Mokrani',
       jobTitle: 'Experte certifiée RH',
