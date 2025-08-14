@@ -43,11 +43,11 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
       <div className={`relative ${className}`} ref={dropdownRef}>
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center space-x-2 px-2 sm:px-3 py-2 text-xs sm:text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors duration-200 disabled:opacity-50 min-h-10"
+          className="flex items-center space-x-2 px-3 sm:px-4 py-2 text-sm font-medium text-white hover:text-ocean-100 hover:bg-ocean-600/50 rounded-lg transition-colors duration-200 disabled:opacity-50 min-h-10 border border-white/20"
           aria-label={t.nav.languageSelector}
         >
-          <span className="font-medium text-xs sm:text-sm">{currentLangConfig?.flag}</span>
-          <ChevronDown className={`w-3 h-3 sm:w-4 sm:h-4 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+          <span className="font-bold text-sm">{currentLangConfig?.flag}</span>
+          <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
         </button>
 
         {isOpen && (
