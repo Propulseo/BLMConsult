@@ -43,8 +43,8 @@ export const pt: TranslationKeys = {
     hero: {
       title: 'Transforme a sua empresa com soluções especializadas',
       subtitle: 'Oferecemos serviços de consultoria abrangentes para ajudar a sua organização a alcançar a excelência e um crescimento sustentável.',
-      cta: 'Pronto para começar?',
-      secondaryCta: 'Descobrir a nossa abordagem',
+      cta: 'Faça-se acompanhar',
+      secondaryCta: 'Quer saber mais?',
       expertise: 'Consultores especializados • + 15 anos de experiência',
       name: 'Lylia Mokrani',
       jobTitle: 'Especialista certificada RH',

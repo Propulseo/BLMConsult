@@ -43,8 +43,8 @@ export const fr: TranslationKeys = {
     hero: {
       title: 'Transformez votre entreprise avec des solutions expertes', 
       subtitle: 'Nous proposons des services de conseil complets pour aider votre organisation à atteindre l\'excellence et une croissance durable.',
-      cta: 'Faites-vous accompagner',
-      secondaryCta: 'Envie d\'en savoir plus ?',
+      cta: 'Prêt à commencer ?',
+      secondaryCta: 'Découvrir notre approche',
       expertise: 'Des consultants experts • + 15 ans d\'expérience',
       name: 'Lylia Mokrani',
       jobTitle: 'Experte certifiée RH',
@@ -610,7 +610,7 @@ export const fr: TranslationKeys = {
       }
     },
     nextSteps: {
-      title: 'Et ensuite ?',
+      title: 'Envie d\'échanger ?',
       subtitle: 'Un accompagnement dans votre démarche d\'amélioration des conditions de travail. Chaque projet commence par un diagnostic personnalisé.',
       step1: {
         title: 'Échanges sur vos besoins',
@@ -624,8 +624,8 @@ export const fr: TranslationKeys = {
         title: 'Proposition sur-mesure',
         description: 'Plan d\'action adapté à vos objectifs'
       },
-      callNow: 'Appeler maintenant',
-      sendMessage: 'Envoyer un message'
+      callNow: 'Échangeons ensemble',
+      sendMessage: 'Faites-vous accompagner'
     }
   },
   
