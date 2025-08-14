@@ -868,7 +868,8 @@ export const en: TranslationKeys = {
         'Strong pressures',
         'Permanent constraints',
         'High levels of requirements',
-        'Complex relationships (hierarchy, collaborators, clients)'
+        'Complex relationships (hierarchy, collaborators, clients)',
+        'Learning to say no'
       ]
     },
     approche: {
