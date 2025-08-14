@@ -147,28 +147,37 @@ const Coaching: React.FC = () => {
       />
       
       {/* Hero Section */}
-      <section className="relative py-16 bg-gradient-to-br from-blue-50 to-white">
+      <section className="relative py-16 bg-gradient-to-br from-blue-50 to-white overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+            alt="Coaching professionnel" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-800/70"></div>
+        </div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
+          <div className="text-center text-white">
             <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-8">
               <Star className="w-4 h-4 mr-2" />
               {t.coaching.hero.badge}
             </div>
             
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">
-              {t.coaching.hero.title} <span className="text-blue-600">{t.coaching.hero.subtitle}</span>
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-8">
+              {t.coaching.hero.title} <span className="text-blue-200">{t.coaching.hero.subtitle}</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-12 leading-relaxed">
+            <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto mb-12 leading-relaxed">
               {t.coaching.hero.description}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-blue-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-300 shadow-lg">
+              <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-medium hover:bg-blue-50 transition-colors duration-300 shadow-lg">
                 {t.coaching.hero.discoverButton}
               </button>
-              <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg font-medium hover:bg-blue-50 transition-colors duration-300">
+              <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white/10 transition-colors duration-300">
                 {t.coaching.hero.quoteButton}
               </button>
             </div>
