@@ -226,3 +226,5 @@ const PolitiqueConfidentialite: React.FC = () => {
 };
 
 export default PolitiqueConfidentialite;
+  )
+}

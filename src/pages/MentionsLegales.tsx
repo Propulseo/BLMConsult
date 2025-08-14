@@ -157,3 +157,5 @@ const MentionsLegales: React.FC = () => {
 };
 
 export default MentionsLegales;
+  )
+}
