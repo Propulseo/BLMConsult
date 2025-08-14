@@ -815,6 +815,26 @@ export const en: TranslationKeys = {
         duration: '3-6 months',
         price: 'From €2,500',
         badge: 'Individual'
+      },
+      collectif: {
+        title: 'Team coaching',
+        subtitle: 'Management teams, operational teams',
+        description: 'Development of collective skills that go beyond the simple addition of individual skills to create true team synergy.',
+        features: [
+          'Work on meaning and common vision',
+          'Regulation of interpersonal relationships',
+          'Improvement of decision-making',
+          'Development of collective intelligence'
+        ],
+        benefits: [
+          'Strengthened collective skills',
+          'Better team regulation',
+          'More effective decisions',
+          'Synergy and collaboration'
+        ],
+        duration: '6-12 months',
+        price: 'From €4,000',
+        badge: 'Team'
       }
     },
     contexte: {

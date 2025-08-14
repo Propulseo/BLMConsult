@@ -814,6 +814,26 @@ export const fr: TranslationKeys = {
         duration: '3-6 mois',
         price: 'À partir de 2 500€',
         badge: 'Individuel'
+      },
+      collectif: {
+        title: 'Coaching collectif',
+        subtitle: 'Équipes de direction, équipes opérationnelles',
+        description: 'Développement des compétences collectives qui dépassent la simple addition des compétences individuelles pour créer une véritable synergie d\'équipe.',
+        features: [
+          'Travail sur le sens et la vision commune',
+          'Régulation des relations interpersonnelles',
+          'Amélioration de la prise de décisions',
+          'Développement de l\'intelligence collective'
+        ],
+        benefits: [
+          'Compétences collectives renforcées',
+          'Meilleure régulation d\'équipe',
+          'Décisions plus efficaces',
+          'Synergie et collaboration'
+        ],
+        duration: '6-12 mois',
+        price: 'À partir de 4 000€',
+        badge: 'Collectif'
       }
     },
     contexte: {
