@@ -172,7 +172,6 @@ const Services: React.FC<ServicesProps> = ({ setCurrentPage }) => {
       
       {/* Hero Section */}
       <section className="relative py-16 bg-gradient-to-br from-blue-50 to-white">
-        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200')] bg-cover bg-center opacity-5"></div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-8">

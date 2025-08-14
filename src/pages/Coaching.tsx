@@ -148,7 +148,6 @@ const Coaching: React.FC = () => {
       
       {/* Hero Section */}
       <section className="relative py-16 bg-gradient-to-br from-blue-50 to-white">
-        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1200')] bg-cover bg-center opacity-5"></div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
