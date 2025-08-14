@@ -328,14 +328,19 @@ const Contact: React.FC<ContactProps> = ({ setCurrentPage }) => {
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <button 
-                onClick={() => handleNavigation('contact')}
+                onClick={() => window.open('https://wa.me/33662437691', '_blank')}
                 className="bg-blue-600 text-white px-10 py-4 rounded-lg font-bold hover:bg-blue-700 transition-colors duration-300 shadow-lg flex items-center cursor-pointer"
               >
                 <Phone className="mr-2 w-5 h-5" />
                 {t.contact.nextSteps.callNow}
               </button>
               <button 
-                onClick={() => handleNavigation('contact')}
+                onClick={() => {
+                  const formElement = document.querySelector('form');
+                  if (formElement) {
+                    formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
+                }}
                 className="bg-white text-blue-600 px-10 py-4 rounded-lg font-bold hover:bg-gray-50 transition-colors duration-300 shadow-lg flex items-center border-2 border-blue-600 cursor-pointer"
               >
                 <Mail className="mr-2 w-5 h-5" />
