@@ -47,6 +47,19 @@ const Coaching: React.FC = () => {
       image: "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=600",
       badge: t.coaching.types.individuel.badge
     },
+    {
+      id: 'collectif',
+      icon: <Users className="w-12 h-12 text-blue-600" />,
+      title: t.coaching.types.collectif.title,
+      subtitle: t.coaching.types.collectif.subtitle,
+      description: t.coaching.types.collectif.description,
+      features: t.coaching.types.collectif.features,
+      benefits: t.coaching.types.collectif.benefits,
+      duration: t.coaching.types.collectif.duration,
+      price: t.coaching.types.collectif.price,
+      image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600",
+      badge: t.coaching.types.collectif.badge
+    }
   ];
 
   const contexteProfessionnel = [
