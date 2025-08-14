@@ -838,7 +838,7 @@ export const fr: TranslationKeys = {
     },
     contexte: {
       title: 'Choisir le coaching comme approche',
-      subtitle: 'Le monde professionnel évolue plus vite que l\'humain',
+      subtitle: 'Le monde professionnel évolue plus vite que l\'humain. Les évolutions du monde professionnel m\'ont amenée à développer de nouvelles compétences et approches',
       cycles: {
         title: 'Cycles de changement accélérés',
         description: 'Les transformations organisationnelles s\'accélèrent, nécessitant une adaptation permanente'

@@ -839,7 +839,7 @@ export const en: TranslationKeys = {
     },
     contexte: {
       title: 'Choosing coaching as an approach',
-      subtitle: 'The professional world evolves faster than humans',
+      subtitle: 'The professional world evolves faster than humans. The evolutions of the professional world have led me to develop new skills and approaches',
       cycles: {
         title: 'Accelerated change cycles',
         description: 'Organizational transformations are accelerating, requiring permanent adaptation'

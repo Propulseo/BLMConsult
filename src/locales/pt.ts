@@ -840,7 +840,7 @@ export const pt: TranslationKeys = {
     },
     contexte: {
       title: 'Escolher o coaching como abordagem',
-      subtitle: 'O mundo profissional evolui mais rápido que o humano',
+      subtitle: 'O mundo profissional evolui mais rápido que o humano. As evoluções do mundo profissional levaram-me a desenvolver novas competências e abordagens',
       cycles: {
         title: 'Ciclos de mudança acelerados',
         description: 'As transformações organizacionais aceleram-se, necessitando de adaptação permanente'
