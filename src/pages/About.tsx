@@ -39,7 +39,7 @@ const About: React.FC = () => {
 
   const interventions = [
     {
-      icon: <Target className="w-6 h-6 text-blue-600" />,
+      icon: <Users className="w-6 h-6 text-blue-600" />,
       title: t.about.interventions.accompagnement.title,
       description: t.about.interventions.accompagnement.description
     },
@@ -54,7 +54,7 @@ const About: React.FC = () => {
       description: t.about.interventions.qvct.description
     },
     {
-      icon: <Users className="w-6 h-6 text-blue-600" />,
+      icon: <MessageCircle className="w-6 h-6 text-blue-600" />,
       title: t.about.interventions.mediation.title,
       description: t.about.interventions.mediation.description
     },
@@ -64,7 +64,7 @@ const About: React.FC = () => {
       description: t.about.interventions.formation.description
     },
     {
-      icon: <MessageCircle className="w-6 h-6 text-blue-600" />,
+      icon: <Heart className="w-6 h-6 text-blue-600" />,
       title: t.about.interventions.cnv.title,
       description: t.about.interventions.cnv.description
     }
