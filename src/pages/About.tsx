@@ -310,7 +310,9 @@ const About: React.FC = () => {
               <div key={index} className="bg-gray-50 p-6 sm:p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
                 <div className="space-y-3 sm:space-y-4">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-600 rounded-xl flex items-center justify-center">
+                    <div className="text-white">
                     {intervention.icon}
+                    </div>
                   </div>
                   <h3 className="text-lg sm:text-xl font-bold text-gray-900">{intervention.title}</h3>
                   <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{intervention.description}</p>
